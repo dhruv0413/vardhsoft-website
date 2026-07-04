@@ -1,0 +1,715 @@
+{
+    "services": [
+        {
+            "title": "Custom Software Development",
+            "slug": "custom-software-development",
+            "hero": {
+                "badge": "Custom Software",
+                "heading": "Custom Software Development Services",
+                "description": "Enterprise software, SaaS products, CRM/ERP systems, and process automation built around your exact workflow.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Schedule Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "Custom software built around your exact workflows, not a one-size-fits-all template.",
+                "who": "Businesses requiring tailored systems",
+                "why": "Operational efficiency and scaling capability"
+            },
+            "problems": [
+                "Manual or spreadsheet-driven processes",
+                "Generic software with awkward workarounds"
+            ],
+            "whyChooseUs": [
+                "Workflow First",
+                "Direct Access to Engineers"
+            ],
+            "subServices": [
+                {
+                    "title": "Enterprise Software Development",
+                    "description": "Custom internal platforms for managing operations, records, staff workflows, and business-specific processes."
+                },
+                {
+                    "title": "SaaS Product Development",
+                    "description": "End-to-end build of subscription-based software products, from MVP to scalable production platforms."
+                },
+                {
+                    "title": "CRM & ERP Development",
+                    "description": "Bespoke systems for managing customer relationships, resources, and workflows tailored to your exact rules."
+                },
+                {
+                    "title": "Business Process Automation",
+                    "description": "Software to automate repetitive manual tasks, reducing operational friction and errors."
+                },
+                {
+                    "title": "API Development & Integration",
+                    "description": "Building secure, documented APIs and connecting third-party platforms with your internal databases."
+                },
+                {
+                    "title": "Legacy System Modernization",
+                    "description": "Auditing and rebuilding outdated core applications on modern, secure stacks without business downtime."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["Next.js", "React", "Node.js", "TypeScript"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "How is custom software different from buying an off-the-shelf tool?",
+                    "answer": "Off-the-shelf tools are built for the average business; custom software is built specifically around how your business actually operates."
+                }
+            ],
+            "cta": {
+                "heading": "Have a Process That Deserves Better?",
+                "description": "Let's talk about what you're working with today, and what a purpose-built system could look like.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Custom Software Development Services | VardhSoft",
+                "metaDescription": "Purpose-built software designed around your exact business processes — not a generic template stretched to fit."
+            }
+        },
+        {
+            "title": "Web Development",
+            "slug": "web-development",
+            "hero": {
+                "badge": "Web Development",
+                "heading": "Custom Web Development Services",
+                "description": "Fast, scalable, and genuinely usable websites and web applications built on modern technology.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "High-performance websites and web applications.",
+                "who": "Growing brands and startups",
+                "why": "Fast loading, responsive, and SEO-optimized web experiences"
+            },
+            "problems": [
+                "Slow loading speeds",
+                "Generic templates that fail to stand out"
+            ],
+            "whyChooseUs": [
+                "Performance-first builds",
+                "Mobile-first design principles"
+            ],
+            "subServices": [
+                {
+                    "title": "Corporate Websites",
+                    "description": "High-performance business websites designed to convey authority, explain offerings, and capture leads."
+                },
+                {
+                    "title": "E-commerce Development",
+                    "description": "Custom online stores and shopping platforms engineered for speed, responsiveness, and conversions."
+                },
+                {
+                    "title": "Web Portals",
+                    "description": "Login-protected environments enabling clients, vendors, or partners to access records and internal databases."
+                },
+                {
+                    "title": "Progressive Web Apps (PWA)",
+                    "description": "Web experiences featuring offline support and installability, delivering native-like mobile utility."
+                },
+                {
+                    "title": "CMS Development",
+                    "description": "Structured content backends (headless or hybrid) allowing teams to publish updates without code updates."
+                },
+                {
+                    "title": "Custom Web Applications",
+                    "description": "Bespoke, logic-driven web systems designed around a highly specific industry or business process."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "How long does website development take?",
+                    "answer": "A corporate website typically takes a few weeks; more complex web applications or portals can take longer depending on scope."
+                }
+            ],
+            "cta": {
+                "heading": "Let's Build a Website That Actually Performs.",
+                "description": "Fast, modern, and built to convert — not just built to exist.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Custom Web Development Services | VardhSoft",
+                "metaDescription": "Fast, scalable, and genuinely usable websites and web applications — built on modern technology, not templates."
+            }
+        },
+        {
+            "title": "Mobile App Development",
+            "slug": "mobile-app-development",
+            "hero": {
+                "badge": "Mobile Apps",
+                "heading": "Mobile App Development Services",
+                "description": "Cross-platform and native mobile experiences that extend your product wherever your users are.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Book Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "User-friendly native and cross-platform apps.",
+                "who": "Businesses needing mobile extension",
+                "why": "Reliable mobile presence and seamless user experience"
+            },
+            "problems": [
+                "No mobile app store visibility",
+                "High cost of maintaining separate iOS and Android codebases"
+            ],
+            "whyChooseUs": [
+                "Pragmatic cross-platform approach",
+                "Direct API and feature integrations"
+            ],
+            "subServices": [
+                {
+                    "title": "Android App Development",
+                    "description": "Performance-focused Android applications built to run seamlessly on various mobile devices."
+                },
+                {
+                    "title": "iOS App Development",
+                    "description": "Apple ecosystem mobile applications designed with native feel, performance, and compliance."
+                },
+                {
+                    "title": "Cross-Platform Apps",
+                    "description": "Single-codebase mobile applications built on React Native to run efficiently on both iOS and Android."
+                },
+                {
+                    "title": "E-commerce Mobile Apps",
+                    "description": "Mobile storefront applications optimized for high speed, swipe interactions, and instant checkouts."
+                },
+                {
+                    "title": "Enterprise Mobile Solutions",
+                    "description": "Companions to internal systems designed for field operatives, tracking, and remote reporting."
+                },
+                {
+                    "title": "App Maintenance & Support",
+                    "description": "Routine testing, SDK patching, and OS compatibility updates to keep your mobile apps functional."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["React Native", "TypeScript", "Node.js"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "Should we build a native app or a cross-platform app?",
+                    "answer": "For most business and e-commerce use cases, cross-platform (React Native) delivers a strong user experience at lower cost."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Put Your Product in Your Users' Pockets?",
+                "description": "Let's figure out the right mobile approach for your business and budget.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Mobile App Development Services | VardhSoft",
+                "metaDescription": "Cross-platform and native mobile experiences that extend your product wherever your users are."
+            }
+        },
+        {
+            "title": "UI/UX Design",
+            "slug": "ui-ux-design",
+            "hero": {
+                "badge": "UI/UX Design",
+                "heading": "UI/UX Design Services",
+                "description": "Research-driven design, wireframing, prototyping, and design systems that make software easy to use.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Schedule Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "Functional, intuitive interface layouts.",
+                "who": "Startups and product owners",
+                "why": "Reduction of user friction and enhancement of visual credibility"
+            },
+            "problems": [
+                "Confusing user navigation",
+                "Outdated or inconsistent visual interface"
+            ],
+            "whyChooseUs": [
+                "Design and development under one roof",
+                "Iterative wireframes and interactive mockups"
+            ],
+            "subServices": [
+                {
+                    "title": "User Research",
+                    "description": "Deep user interviews, persona mapping, and usability testing to validate design structure."
+                },
+                {
+                    "title": "Wireframing & Prototyping",
+                    "description": "High-fidelity visual wireframes and clickable layouts to map user flows before coding."
+                },
+                {
+                    "title": "Web UI Design",
+                    "description": "Responsive layouts, page flows, and visual systems for complex web environments and applications."
+                },
+                {
+                    "title": "Mobile App Design",
+                    "description": "Visual interfaces optimized for thumb-reach, mobile gestures, and screen orientations."
+                },
+                {
+                    "title": "Design Systems",
+                    "description": "Standardized UI components, layouts, and typography catalogs ensuring product consistency."
+                },
+                {
+                    "title": "UX Audit & Improvements",
+                    "description": "Performance review of current interfaces to pinpoint friction areas and drop-offs."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["Figma", "Tailwind CSS"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "What's the difference between a wireframe and a prototype?",
+                    "answer": "A wireframe is low-fidelity; a prototype simulates the real clickable experience."
+                }
+            ],
+            "cta": {
+                "heading": "Let's Design Something Your Users Actually Enjoy Using.",
+                "description": "Good design pays for itself in retention and conversion — let's start with a conversation about your product.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "UI/UX Design Services | VardhSoft",
+                "metaDescription": "Interfaces designed around how real users actually think, not how a system happens to be structured."
+            }
+        },
+        {
+            "title": "Cloud & DevOps Services",
+            "slug": "cloud-devops-services",
+            "hero": {
+                "badge": "Cloud & DevOps",
+                "heading": "Cloud & DevOps Services",
+                "description": "Reliable infrastructure and deployment pipelines that keep your application fast, stable, and easy to ship.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Schedule Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "Hosting, pipelines, and server config.",
+                "who": "SaaS applications and internal networks",
+                "why": "High availability, automated releases, and optimal server costs"
+            },
+            "problems": [
+                "Manual and error-prone deployment pipelines",
+                "Lack of hosting scalability and server health monitoring"
+            ],
+            "whyChooseUs": [
+                "Right-sized configurations without complexity overhead",
+                "Uptime monitoring and alerting setup"
+            ],
+            "subServices": [
+                {
+                    "title": "Cloud Migration",
+                    "description": "Migrating databases, hosting, and systems from legacy servers to scalable AWS or Vercel cloud spaces."
+                },
+                {
+                    "title": "CI/CD Pipeline Setup",
+                    "description": "Automated deployment flows that test and push code updates securely with zero manual friction."
+                },
+                {
+                    "title": "Containerization with Docker",
+                    "description": "Packaging services into standalone containers to guarantee consistent execution environments."
+                },
+                {
+                    "title": "Infrastructure Automation",
+                    "description": "Scripting infrastructure configs (Infrastructure as Code) for automated, secure system scaling."
+                },
+                {
+                    "title": "Performance Monitoring",
+                    "description": "Dashboards tracking resource loads, server response speeds, and runtime issues."
+                },
+                {
+                    "title": "DevOps Consulting",
+                    "description": "Practical architecture guidance to organize deployment paths and reduce monthly cloud billing."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["AWS", "Vercel", "Docker", "GitHub Actions"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "Can you migrate our existing application without downtime?",
+                    "answer": "In most cases, yes, we run parallel environments for seamless stages cutover."
+                }
+            ],
+            "cta": {
+                "heading": "Stop Losing Sleep Over Deployment Day.",
+                "description": "Let's set up infrastructure that just works — reliably, and without drama.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Cloud & DevOps Services | VardhSoft",
+                "metaDescription": "Reliable infrastructure and deployment pipelines that keep your application fast, stable, and easy to ship."
+            }
+        },
+        {
+            "title": "AI & Automation Solutions",
+            "slug": "ai-automation-solutions",
+            "hero": {
+                "badge": "AI & Automation",
+                "heading": "AI & Automation Solutions",
+                "description": "Practical AI features and workflow automation that save real time — not AI for the sake of a buzzword.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Schedule Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "Rule-based and LLM-assisted automations.",
+                "who": "Teams bogged down by administrative tasks",
+                "why": "Intelligent processing and repetitive workflow elimination"
+            },
+            "problems": [
+                "Excessive hours spent on repetitive data entry",
+                "Customer support queues backing up with inquiries"
+            ],
+            "whyChooseUs": [
+                "Practical utility focus over hype",
+                "Clear fallback mechanisms to verify output accuracy"
+            ],
+            "subServices": [
+                {
+                    "title": "AI Chatbots",
+                    "description": "Context-aware conversational tools for automated support and lead collection, powered by custom LLM APIs."
+                },
+                {
+                    "title": "Generative AI Applications",
+                    "description": "Content generation, summary tools, and image analysis models embedded into your web apps."
+                },
+                {
+                    "title": "Workflow Automation",
+                    "description": "Integrating web hooks and APIs to sync database values and automate cross-platform work steps."
+                },
+                {
+                    "title": "Document Processing Solutions",
+                    "description": "Automated parsing, classification, and text extraction from forms, invoices, and contracts."
+                },
+                {
+                    "title": "Recommendation Systems",
+                    "description": "Data-driven personalization scripts showing custom suggestions based on customer activity history."
+                },
+                {
+                    "title": "Custom AI Integrations",
+                    "description": "Securely linking your systems to Google Gemini, Anthropic Claude, or OpenAI API servers."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["OpenAI", "Node.js", "Python"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "Do we actually need AI, or would simpler automation solve our problem?",
+                    "answer": "Many workflow problems are better solved with straightforward rules-based automation, which is cheaper and faster."
+                }
+            ],
+            "cta": {
+                "heading": "Curious Where AI Actually Fits in Your Business?",
+                "description": "Let's have an honest conversation about what's worth automating — and what isn't.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "AI & Automation Solutions | VardhSoft",
+                "metaDescription": "Practical AI features and workflow automation that save real time — not AI for the sake of a buzzword."
+            }
+        },
+        {
+            "title": "E-commerce Solutions",
+            "slug": "e-commerce-solutions",
+            "hero": {
+                "badge": "E-commerce Solutions",
+                "heading": "E-commerce Development Solutions",
+                "description": "Online stores built to convert — from custom builds to fully managed Shopify storefronts.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Schedule Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "Custom shopping platforms and Shopify setups.",
+                "who": "D2C brands and physical retail chains",
+                "why": "Optimized catalog layout and high checkout conversion"
+            },
+            "problems": [
+                "Poor checkout conversions and abandoned carts",
+                "Sloppy inventory management sync across warehouses"
+            ],
+            "whyChooseUs": [
+                "Hands-on e-commerce implementation track record",
+                "Optimized storefront templates designed for sales"
+            ],
+            "subServices": [
+                {
+                    "title": "Custom E-commerce Development",
+                    "description": "Fully bespoke cart and checkout portals designed to support custom product configurations."
+                },
+                {
+                    "title": "Marketplace Development",
+                    "description": "Multi-vendor marketplace platforms allowing multiple merchants to sell and track orders in one place."
+                },
+                {
+                    "title": "Payment Gateway Integration",
+                    "description": "Custom integrations with global and local providers (Razorpay, Stripe, etc.) for secure checkouts."
+                },
+                {
+                    "title": "Inventory Management Systems",
+                    "description": "Syncing stock values, catalog details, and warehouses with your storefront in real time."
+                },
+                {
+                    "title": "Subscription Platforms",
+                    "description": "Recurring billing setups, billing plans, and user account portals for subscription services."
+                },
+                {
+                    "title": "E-commerce Maintenance",
+                    "description": "Catalog updates, database backups, checkout speed tests, and plugin patches post-launch."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["Shopify", "Shopify Liquid", "Node.js", "React"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "Should we build on Shopify or go fully custom?",
+                    "answer": "For most e-commerce businesses, Shopify offers the best combination of speed, security, and manageability."
+                }
+            ],
+            "cta": {
+                "heading": "Let's Build a Store That Actually Sells.",
+                "description": "From first product upload to a fully optimized checkout — we'll handle the build, you handle the growth.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "E-commerce Solutions | VardhSoft",
+                "metaDescription": "Online stores built to convert — from custom builds to fully managed Shopify storefronts."
+            }
+        },
+        {
+            "title": "Quality Assurance & Testing",
+            "slug": "quality-assurance-testing",
+            "hero": {
+                "badge": "Quality Assurance",
+                "heading": "Quality Assurance & Testing Services",
+                "description": "Manual, automated, API, performance, and security testing to catch problems before your users do.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Schedule Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "Cross-device testing plans and automated assertions.",
+                "who": "Teams launching high-risk feature sets",
+                "why": "Reduction of post-launch regression bugs"
+            },
+            "problems": [
+                "Product bugs slipping into production settings",
+                "Broken features following minor code patches"
+            ],
+            "whyChooseUs": [
+                "Automated testing integrated into standard code workflow",
+                "Detailed, prioritize bug listings"
+            ],
+            "subServices": [
+                {
+                    "title": "Manual Testing",
+                    "description": "Thorough manual walkthroughs to test layout look, button behaviors, and responsive view limits."
+                },
+                {
+                    "title": "Automated Testing",
+                    "description": "Unit and integration scripts verifying core database updates and calculations on every build."
+                },
+                {
+                    "title": "API Testing",
+                    "description": "Validating route behaviors, input formats, and response codes under various scenarios."
+                },
+                {
+                    "title": "Performance Testing",
+                    "description": "Simulating peak visitor loads to locate database bottle-necks and load-time slowdowns."
+                },
+                {
+                    "title": "Security Testing",
+                    "description": "Sanity checks tracking common threats (XSS, injections, authentication failures) to safeguard databases."
+                },
+                {
+                    "title": "Regression Testing",
+                    "description": "Ensuring new features or bug fixes do not break existing, stable functionalities."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["Jest", "Playwright", "Cypress"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "What's the difference between manual and automated testing?",
+                    "answer": "Manual testing relies on manual checks; automated testing runs scripted pipelines."
+                }
+            ],
+            "cta": {
+                "heading": "Don't Let Your Users Find the Bugs First.",
+                "description": "Let's talk about your current testing gaps and how to close them.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Quality Assurance & Testing Services | VardhSoft",
+                "metaDescription": "Manual, automated, API, performance, and security testing to catch problems before your users do."
+            }
+        },
+        {
+            "title": "Maintenance & Support",
+            "slug": "maintenance-support",
+            "hero": {
+                "badge": "Maintenance & Support",
+                "heading": "Application Maintenance & Support Services",
+                "description": "Keeping your software fast, secure, and reliable post-launch with ongoing bug fixes, monitoring, and updates.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "Schedule Consultation",
+                    "link": "/contact"
+                },
+                "stats": []
+            },
+            "overview": {
+                "what": "Routine maintenance, patching, and SLA tasks.",
+                "who": "Businesses seeking peace of mind",
+                "why": "Product uptime and dependency compliance"
+            },
+            "problems": [
+                "Lack of developer resources to patch small bugs",
+                "Breakages caused by API version upgrades"
+            ],
+            "whyChooseUs": [
+                "Proactive server checks and backup verifications",
+                "Shared ticketing and direct support lines"
+            ],
+            "subServices": [
+                {
+                    "title": "Application Monitoring",
+                    "description": "24/7 tracking of server uptime, page speeds, and system logs to identify anomalies proactively."
+                },
+                {
+                    "title": "Bug Fixes & Enhancements",
+                    "description": "Resolving issues and implementing minor codebase tweaks as business needs scale."
+                },
+                {
+                    "title": "Performance Optimization",
+                    "description": "Query tuning, database cleanup, and script minification to keep operations fast."
+                },
+                {
+                    "title": "Security Updates",
+                    "description": "Applying software library patches, dependency upgrades, and SSL certifications."
+                },
+                {
+                    "title": "Technical Support",
+                    "description": "Direct developer assistance for operational inquiries, configuration updates, and host issues."
+                },
+                {
+                    "title": "Infrastructure Maintenance",
+                    "description": "Managing domain renewals, cloud host options, server configuration, and backup pathways."
+                }
+            ],
+            "process": ["Discovery", "Planning", "Design", "Development", "Testing", "Launch & Support"],
+            "features": [],
+            "technologies": ["Next.js", "Node.js", "AWS", "Sentry"],
+            "industries": ["Healthcare", "E-commerce", "SaaS"],
+            "faqs": [
+                {
+                    "question": "What does your typical maintenance agreement cover?",
+                    "answer": "It covers software updates, server and database monitoring, backups, and bug fixes."
+                }
+            ],
+            "cta": {
+                "heading": "Keep Your Software Running at Peak Performance.",
+                "description": "Let's discuss a support plan that gives you peace of mind and keeps your product secure.",
+                "buttons": [
+                    { "label": "Start Your Project", "link": "/contact" },
+                    { "label": "Schedule a Consultation", "link": "/contact" }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Application Maintenance & Support Services | VardhSoft",
+                "metaDescription": "Keeping your software fast, secure, and reliable post-launch with ongoing bug fixes, monitoring, and updates."
+            }
+        }
+    ]
+}

@@ -1,0 +1,1246 @@
+{
+    "services": [
+        {
+            "title": "Product Engineering",
+            "slug": "product-engineering",
+            "hero": {
+                "badge": "Product Engineering",
+                "heading": "Product Engineering Services",
+                "description": "End-to-end software product development from idea validation to scalable platforms.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "40+",
+                        "label": "Products Shipped"
+                    },
+                    {
+                        "value": "15+",
+                        "label": "Engineering Experts"
+                    },
+                    {
+                        "value": "98%",
+                        "label": "On-Time Delivery"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "End-to-end software product development from idea validation to scalable platforms.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready product engineering solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Ideas stall in planning without a clear path to a working product",
+                "Engineering teams rebuild the same features instead of focusing on differentiation",
+                "Products are hard to scale once user demand grows",
+                "Technical debt slows down every new release"
+            ],
+            "subServices": [
+                {
+                    "title": "Custom Software Development",
+                    "description": "Bespoke software built around your exact workflows, not a one-size-fits-all template."
+                },
+                {
+                    "title": "SaaS Product Development",
+                    "description": "Multi-tenant SaaS platforms designed for subscription billing, scale, and fast onboarding."
+                },
+                {
+                    "title": "MVP Development",
+                    "description": "Launch-ready MVPs that validate your idea with real users in weeks, not months."
+                },
+                {
+                    "title": "Enterprise Applications",
+                    "description": "Robust internal systems that integrate with your existing enterprise stack."
+                },
+                {
+                    "title": "Legacy System Modernization",
+                    "description": "Migrate aging codebases to modern, maintainable architectures without business disruption."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "Modular Architecture",
+                "API-First Design",
+                "Automated Testing",
+                "Cloud-Native Infrastructure",
+                "Continuous Delivery"
+            ],
+            "technologies": [
+                "Next.js",
+                "React",
+                "Node.js",
+                "TypeScript",
+                "PostgreSQL",
+                "Docker",
+                "AWS"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "Senior Product Engineers",
+                "Transparent Sprint Reporting",
+                "Agile, Iterative Delivery",
+                "Built for Long-Term Ownership",
+                "Security Reviewed at Every Stage"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Scaling a Logistics Startup's Core Platform",
+                    "client": "A regional logistics startup",
+                    "problem": "Their dispatch system was a spreadsheet-driven process that couldn't keep up with order volume and caused frequent delivery delays.",
+                    "solution": "We rebuilt their dispatch and tracking platform as a cloud-native product with real-time updates and role-based access.",
+                    "technologies": [
+                        "Next.js",
+                        "React",
+                        "Node.js",
+                        "TypeScript"
+                    ],
+                    "impact": "Order processing time dropped by 65% and the platform now handles 5x the original order volume without added headcount."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "How long does an MVP take?",
+                    "answer": "Most MVPs are delivered in 6–12 weeks depending on complexity."
+                },
+                {
+                    "question": "Can you build SaaS products?",
+                    "answer": "Yes, from product strategy through deployment and ongoing scaling."
+                },
+                {
+                    "question": "Do you modernize legacy systems?",
+                    "answer": "Yes, we upgrade architecture, UI, and infrastructure with minimal downtime."
+                },
+                {
+                    "question": "Do you provide support after launch?",
+                    "answer": "Yes, we offer flexible long-term maintenance and support plans."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with Product Engineering?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Product Engineering Services | [Your Company]",
+                "metaDescription": "Custom software, SaaS, and MVP development services that turn validated ideas into scalable, production-ready products."
+            },
+            "icon": "layers"
+        },
+        {
+            "title": "Web Engineering",
+            "slug": "web-engineering",
+            "hero": {
+                "badge": "Web Engineering",
+                "heading": "Web Engineering Services",
+                "description": "High-performance websites and web applications built for growth and conversions.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "60+",
+                        "label": "Websites Launched"
+                    },
+                    {
+                        "value": "99.9%",
+                        "label": "Average Uptime"
+                    },
+                    {
+                        "value": "35%",
+                        "label": "Avg. Conversion Lift"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "High-performance websites and web applications built for growth and conversions.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready web engineering solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Slow page speeds are driving visitors away before they convert",
+                "Outdated websites don't reflect the brand or work well on mobile",
+                "Marketing teams can't update content without developer help",
+                "Existing sites struggle to rank on search engines"
+            ],
+            "subServices": [
+                {
+                    "title": "Corporate Websites",
+                    "description": "Fast, on-brand corporate websites that build credibility and convert visitors into leads."
+                },
+                {
+                    "title": "Web Applications",
+                    "description": "Custom web apps for internal tools, customer portals, and data-driven workflows."
+                },
+                {
+                    "title": "E-Commerce Development",
+                    "description": "Storefronts built for speed, secure checkout, and high conversion rates."
+                },
+                {
+                    "title": "Progressive Web Apps",
+                    "description": "App-like web experiences with offline support and push notifications, no app store required."
+                },
+                {
+                    "title": "Custom Portals",
+                    "description": "Secure, role-based portals for clients, partners, or employees to self-serve data and tasks."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "Core Web Vitals Optimized",
+                "Headless CMS Integration",
+                "Responsive Across Devices",
+                "SEO-Ready Architecture",
+                "Accessibility Compliant"
+            ],
+            "technologies": [
+                "Next.js",
+                "React",
+                "Tailwind CSS",
+                "Payload CMS",
+                "PostgreSQL"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "Performance-First Engineering",
+                "SEO Built In From Day One",
+                "Pixel-Accurate Implementation",
+                "Conversion-Focused UX",
+                "Ongoing Site Reliability Support"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Rebuilding an E-Commerce Storefront for Speed",
+                    "client": "A direct-to-consumer retail brand",
+                    "problem": "Their storefront took over 6 seconds to load on mobile, causing high cart abandonment during peak traffic.",
+                    "solution": "We rebuilt the front end on a headless architecture with optimized images and server-side rendering.",
+                    "technologies": [
+                        "Next.js",
+                        "React",
+                        "Tailwind CSS",
+                        "Payload CMS"
+                    ],
+                    "impact": "Mobile load time dropped to under 1.5 seconds and checkout conversion increased by 28% within the first quarter."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "How much does a business website cost?",
+                    "answer": "Pricing depends on scope, integrations, and custom features required."
+                },
+                {
+                    "question": "Do you build SEO-friendly websites?",
+                    "answer": "Yes, every website follows technical SEO best practices from the ground up."
+                },
+                {
+                    "question": "Can you redesign an existing website?",
+                    "answer": "Yes, we modernize and migrate legacy websites with minimal downtime."
+                },
+                {
+                    "question": "Do you provide CMS solutions?",
+                    "answer": "Yes, we build both traditional and headless CMS implementations."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with Web Engineering?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Web Engineering Services | [Your Company]",
+                "metaDescription": "High-performance websites and web applications engineered for speed, SEO, and measurable conversion growth."
+            },
+            "icon": "globe"
+        },
+        {
+            "title": "Mobile Engineering",
+            "slug": "mobile-engineering",
+            "hero": {
+                "badge": "Mobile Engineering",
+                "heading": "Mobile Engineering Services",
+                "description": "Cross-platform and native mobile applications focused on usability and performance.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "30+",
+                        "label": "Apps Launched"
+                    },
+                    {
+                        "value": "4.7★",
+                        "label": "Avg. App Store Rating"
+                    },
+                    {
+                        "value": "2M+",
+                        "label": "App Downloads Supported"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "Cross-platform and native mobile applications focused on usability and performance.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready mobile engineering solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Apps feel sluggish or crash under real-world usage",
+                "Maintaining separate iOS and Android codebases doubles development cost",
+                "Poor onboarding leads to high user drop-off in the first session",
+                "App updates take too long to ship, frustrating users and stakeholders"
+            ],
+            "subServices": [
+                {
+                    "title": "Android Development",
+                    "description": "Native Android apps built with Kotlin for performance-critical experiences."
+                },
+                {
+                    "title": "iOS Development",
+                    "description": "Native iOS apps built with Swift, optimized for the latest Apple devices and guidelines."
+                },
+                {
+                    "title": "Cross-Platform Apps",
+                    "description": "Single-codebase apps for iOS and Android that cut development time without compromising feel."
+                },
+                {
+                    "title": "App Modernization",
+                    "description": "Refactor outdated apps with modern frameworks, improved performance, and updated UI."
+                },
+                {
+                    "title": "App Maintenance",
+                    "description": "Ongoing updates, bug fixes, and OS-compatibility support after launch."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "Native-Level Performance",
+                "Offline-First Data Sync",
+                "Push Notifications",
+                "Biometric Authentication",
+                "Over-the-Air Updates"
+            ],
+            "technologies": [
+                "Flutter",
+                "React Native",
+                "Firebase",
+                "Node.js",
+                "PostgreSQL"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "Dedicated Mobile Engineers",
+                "App Store & Play Store Launch Support",
+                "Performance Profiling at Every Release",
+                "Cross-Platform Code Reuse",
+                "Post-Launch Crash Monitoring"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Launching a Cross-Platform Fitness App",
+                    "client": "A health & wellness startup",
+                    "problem": "They needed an iOS and Android app on a tight runway and budget, with no existing mobile codebase.",
+                    "solution": "We built a single cross-platform app with offline workout tracking and cloud sync, launched in 10 weeks.",
+                    "technologies": [
+                        "Flutter",
+                        "React Native",
+                        "Firebase",
+                        "Node.js"
+                    ],
+                    "impact": "The app reached 50,000 downloads in its first 90 days with a 4.8-star average rating across both stores."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "Should I choose Flutter or React Native?",
+                    "answer": "We recommend the right framework based on your performance needs and budget."
+                },
+                {
+                    "question": "Do you build native apps?",
+                    "answer": "Yes, we develop both fully native and cross-platform applications."
+                },
+                {
+                    "question": "How long does app development take?",
+                    "answer": "Most projects take between 8 and 20 weeks depending on scope."
+                },
+                {
+                    "question": "Can you maintain existing apps?",
+                    "answer": "Yes, we support, update, and improve apps we didn't originally build."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with Mobile Engineering?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Mobile Engineering Services | [Your Company]",
+                "metaDescription": "Native and cross-platform mobile app development focused on performance, usability, and successful launches."
+            },
+            "icon": "smartphone"
+        },
+        {
+            "title": "AI Development",
+            "slug": "ai-development",
+            "hero": {
+                "badge": "AI Development",
+                "heading": "AI Development Services",
+                "description": "AI-powered solutions that automate processes and create intelligent experiences.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "25+",
+                        "label": "AI Models Deployed"
+                    },
+                    {
+                        "value": "70%",
+                        "label": "Avg. Task Automation"
+                    },
+                    {
+                        "value": "12+",
+                        "label": "Industries Served"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "AI-powered solutions that automate processes and create intelligent experiences.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready ai development solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Repetitive manual tasks consume hours that could go toward higher-value work",
+                "Existing tools can't extract insight from unstructured data",
+                "Customer support teams are overwhelmed by repetitive queries",
+                "Leadership lacks confidence in AI ROI due to unclear use cases"
+            ],
+            "subServices": [
+                {
+                    "title": "AI Chatbots",
+                    "description": "Professional ai chatbots services tailored to your business requirements."
+                },
+                {
+                    "title": "AI Agents",
+                    "description": "Professional ai agents services tailored to your business requirements."
+                },
+                {
+                    "title": "Generative AI Solutions",
+                    "description": "Professional generative ai solutions services tailored to your business requirements."
+                },
+                {
+                    "title": "Custom AI Applications",
+                    "description": "Professional custom ai applications services tailored to your business requirements."
+                },
+                {
+                    "title": "Workflow Automation",
+                    "description": "Professional workflow automation services tailored to your business requirements."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "Custom LLM Integrations",
+                "Retrieval-Augmented Generation",
+                "Predictive Analytics",
+                "Computer Vision Pipelines",
+                "Human-in-the-Loop Workflows"
+            ],
+            "technologies": [
+                "Python",
+                "OpenAI",
+                "LangChain",
+                "Vector Databases",
+                "PostgreSQL"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "ML Engineers With Production Experience",
+                "Responsible AI & Data Privacy Practices",
+                "Use-Case-First Approach, Not Hype",
+                "Measurable ROI Tracking",
+                "Seamless Integration With Existing Tools"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Deploying a Support Chatbot for a SaaS Platform",
+                    "client": "A B2B SaaS company",
+                    "problem": "Their support team was spending 40% of their time answering the same repetitive product questions.",
+                    "solution": "We built a retrieval-augmented chatbot trained on their documentation, integrated directly into their app.",
+                    "technologies": [
+                        "Python",
+                        "OpenAI",
+                        "LangChain",
+                        "Vector Databases"
+                    ],
+                    "impact": "The chatbot now resolves 62% of incoming tickets without human intervention, cutting average response time by half."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "Do you build custom AI models or use existing APIs?",
+                    "answer": "Both — we choose the right approach based on your data, budget, and accuracy needs."
+                },
+                {
+                    "question": "Is our data used to train external models?",
+                    "answer": "No, your data stays private and is never used to train third-party models."
+                },
+                {
+                    "question": "How do you measure AI ROI?",
+                    "answer": "We define success metrics upfront and track them through dashboards post-launch."
+                },
+                {
+                    "question": "Can AI integrate with our existing software?",
+                    "answer": "Yes, through APIs, webhooks, and direct integrations with your current stack."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with AI Development?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "AI Development Services | [Your Company]",
+                "metaDescription": "AI development services including chatbots, predictive analytics, and workflow automation built on your real data."
+            },
+            "icon": "cpu"
+        },
+        {
+            "title": "Business Automation",
+            "slug": "business-automation",
+            "hero": {
+                "badge": "Business Automation",
+                "heading": "Business Automation Services",
+                "description": "Software systems that streamline operations and eliminate repetitive work.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "50+",
+                        "label": "Workflows Automated"
+                    },
+                    {
+                        "value": "10,000+",
+                        "label": "Hours Saved Annually"
+                    },
+                    {
+                        "value": "20+",
+                        "label": "CRM Integrations Delivered"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "Software systems that streamline operations and eliminate repetitive work.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready business automation solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Teams duplicate data entry across disconnected tools",
+                "Manual approvals create bottlenecks that slow down operations",
+                "Spreadsheets break down as the business grows",
+                "Leadership lacks real-time visibility into operational metrics"
+            ],
+            "subServices": [
+                {
+                    "title": "CRM Development",
+                    "description": "Professional crm development services tailored to your business requirements."
+                },
+                {
+                    "title": "ERP Development",
+                    "description": "Professional erp development services tailored to your business requirements."
+                },
+                {
+                    "title": "HRMS Development",
+                    "description": "Professional hrms development services tailored to your business requirements."
+                },
+                {
+                    "title": "Inventory Systems",
+                    "description": "Professional inventory systems services tailored to your business requirements."
+                },
+                {
+                    "title": "Workflow Automation",
+                    "description": "Map and automate multi-step business processes to remove manual handoffs."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "No-Code/Low-Code Workflows",
+                "Custom CRM & ERP Integrations",
+                "Automated Reporting Dashboards",
+                "Role-Based Approval Chains",
+                "Real-Time Notifications"
+            ],
+            "technologies": [
+                "Next.js",
+                "React",
+                "Node.js",
+                "PostgreSQL",
+                "Docker"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "Process Audits Before We Build",
+                "Integrations With Tools You Already Use",
+                "Measurable Time & Cost Savings",
+                "Employee Training Included",
+                "Iterative Rollouts, Not Big-Bang Launches"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Automating Order Operations for a Wholesale Distributor",
+                    "client": "A regional wholesale distributor",
+                    "problem": "Order processing relied on manually re-entering data across three disconnected systems, causing frequent errors.",
+                    "solution": "We built a custom integration layer and approval workflow connecting their CRM, inventory, and billing systems.",
+                    "technologies": [
+                        "Next.js",
+                        "React",
+                        "Node.js",
+                        "PostgreSQL"
+                    ],
+                    "impact": "Manual data entry was reduced by 80%, and order processing time dropped from 2 days to under 4 hours."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "Can you automate our existing workflows?",
+                    "answer": "Yes, we start by auditing your current process before digitizing it."
+                },
+                {
+                    "question": "Do you build custom CRM systems?",
+                    "answer": "Yes, tailored specifically to how your sales and operations teams actually work."
+                },
+                {
+                    "question": "Can automation integrate with our software?",
+                    "answer": "Yes, through APIs and direct third-party integrations."
+                },
+                {
+                    "question": "Do you provide employee training?",
+                    "answer": "Yes, onboarding sessions and documentation are included with every rollout."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with Business Automation?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Business Automation Services | [Your Company]",
+                "metaDescription": "Business process automation and custom CRM systems that eliminate manual work and reduce operational costs."
+            },
+            "icon": "workflow"
+        },
+        {
+            "title": "Cloud & DevOps",
+            "slug": "cloud-devops",
+            "hero": {
+                "badge": "Cloud & DevOps",
+                "heading": "Cloud & DevOps Services",
+                "description": "Cloud infrastructure and DevOps solutions for reliable deployments and scaling.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "100+",
+                        "label": "Deployments Managed"
+                    },
+                    {
+                        "value": "99.95%",
+                        "label": "Avg. Infrastructure Uptime"
+                    },
+                    {
+                        "value": "45%",
+                        "label": "Avg. Cloud Cost Reduction"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "Cloud infrastructure and DevOps solutions for reliable deployments and scaling.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready cloud & devops solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Deployments are manual, slow, and prone to human error",
+                "Infrastructure costs keep climbing without clear visibility into why",
+                "Outages take too long to detect and resolve",
+                "Scaling for traffic spikes requires manual intervention"
+            ],
+            "subServices": [
+                {
+                    "title": "Cloud Infrastructure",
+                    "description": "Design and provision secure, scalable cloud infrastructure on AWS, Azure, or GCP."
+                },
+                {
+                    "title": "Docker Containerization",
+                    "description": "Containerize applications for consistent, portable deployments across environments."
+                },
+                {
+                    "title": "CI/CD Pipelines",
+                    "description": "Automated build, test, and deployment pipelines that ship code safely and fast."
+                },
+                {
+                    "title": "Cloud Migration",
+                    "description": "Move on-premise or legacy infrastructure to the cloud with minimal downtime."
+                },
+                {
+                    "title": "Monitoring & Maintenance",
+                    "description": "Proactive monitoring, alerting, and incident response to keep systems healthy."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "Infrastructure as Code",
+                "Auto-Scaling Architecture",
+                "Zero-Downtime Deployments",
+                "Centralized Logging & Alerting",
+                "Cost Optimization Reviews"
+            ],
+            "technologies": [
+                "AWS",
+                "Docker",
+                "Kubernetes",
+                "GitHub Actions",
+                "Linux"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "Certified Cloud Architects",
+                "Multi-Cloud & Hybrid Experience",
+                "24/7 Monitoring Options",
+                "Security-Hardened Infrastructure",
+                "Clear Cost Reporting"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Migrating a Legacy Platform to the Cloud",
+                    "client": "A mid-sized fintech company",
+                    "problem": "Their on-premise infrastructure couldn't scale during peak transaction periods and required constant manual upkeep.",
+                    "solution": "We migrated their platform to a containerized, auto-scaling architecture on AWS with full CI/CD automation.",
+                    "technologies": [
+                        "AWS",
+                        "Docker",
+                        "Kubernetes",
+                        "GitHub Actions"
+                    ],
+                    "impact": "Infrastructure costs dropped by 38% and deployment frequency increased from monthly to multiple times per week."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "Which cloud provider should we choose?",
+                    "answer": "We recommend a provider based on your budget, scale, and compliance requirements."
+                },
+                {
+                    "question": "Can you migrate our infrastructure?",
+                    "answer": "Yes, with a phased plan designed to minimize downtime and risk."
+                },
+                {
+                    "question": "Do you provide monitoring?",
+                    "answer": "Yes, including centralized logging, alerting, and performance monitoring."
+                },
+                {
+                    "question": "Can you set up CI/CD pipelines?",
+                    "answer": "Yes, we automate testing and deployments end-to-end."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with Cloud & DevOps?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Cloud & DevOps Services | [Your Company]",
+                "metaDescription": "Cloud infrastructure and DevOps services for reliable deployments, auto-scaling, and lower infrastructure costs."
+            },
+            "icon": "cloud"
+        },
+        {
+            "title": "Design & Experience",
+            "slug": "design-experience",
+            "hero": {
+                "badge": "Design & Experience",
+                "heading": "Design & Experience Services",
+                "description": "User-centered design services that create engaging digital experiences.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "80+",
+                        "label": "Products Designed"
+                    },
+                    {
+                        "value": "90%",
+                        "label": "Avg. Usability Score"
+                    },
+                    {
+                        "value": "25%",
+                        "label": "Avg. Engagement Lift"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "User-centered design services that create engaging digital experiences.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready design & experience solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Users abandon products due to confusing or inconsistent interfaces",
+                "Design and development are out of sync, causing rework",
+                "Brands lack a consistent visual identity across products",
+                "Teams ship features without validating them with real users first"
+            ],
+            "subServices": [
+                {
+                    "title": "UI Design",
+                    "description": "Clean, on-brand interface design that balances aesthetics with usability."
+                },
+                {
+                    "title": "UX Design",
+                    "description": "User flows and interactions grounded in research, not guesswork."
+                },
+                {
+                    "title": "Product Design",
+                    "description": "End-to-end design from concept through high-fidelity, dev-ready screens."
+                },
+                {
+                    "title": "Wireframing",
+                    "description": "Low-fidelity wireframes to align stakeholders before visual design begins."
+                },
+                {
+                    "title": "Design Systems",
+                    "description": "Reusable component libraries that keep design and development consistent at scale."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "User Research & Testing",
+                "Reusable Design Systems",
+                "Interactive Prototyping",
+                "Accessibility-First Design",
+                "Design-to-Development Handoff"
+            ],
+            "technologies": [
+                "Figma",
+                "Framer",
+                "FigJam",
+                "Adobe XD",
+                "Miro"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "Senior Product Designers",
+                "Research-Backed Design Decisions",
+                "Design Systems Built for Scale",
+                "Close Collaboration With Engineering",
+                "Fast Prototype-to-Validation Cycles"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Redesigning a SaaS Dashboard for Usability",
+                    "client": "A project management SaaS company",
+                    "problem": "Users frequently abandoned onboarding because the dashboard was cluttered and unintuitive.",
+                    "solution": "We ran usability testing, then redesigned the dashboard with a simplified information hierarchy and a new design system.",
+                    "technologies": [
+                        "Figma",
+                        "Framer",
+                        "FigJam",
+                        "Adobe XD"
+                    ],
+                    "impact": "Onboarding completion improved by 34% and support tickets related to navigation dropped by half."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "Do you conduct user research?",
+                    "answer": "Yes, we perform research and usability testing before designing."
+                },
+                {
+                    "question": "Can you redesign our product?",
+                    "answer": "Yes, we modernize interfaces and improve the overall user experience."
+                },
+                {
+                    "question": "Do you provide interactive prototypes?",
+                    "answer": "Yes, for faster stakeholder validation and user feedback."
+                },
+                {
+                    "question": "How long does the design process take?",
+                    "answer": "Usually between 2 and 6 weeks depending on scope."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with Design & Experience?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Design & Experience Services | [Your Company]",
+                "metaDescription": "UI/UX design and design systems built on research to improve usability, engagement, and conversion."
+            },
+            "icon": "figma"
+        },
+        {
+            "title": "Quality & Support",
+            "slug": "quality-support",
+            "hero": {
+                "badge": "Quality & Support",
+                "heading": "Quality & Support Services",
+                "description": "Testing, monitoring, and support services to keep applications secure and reliable.",
+                "primaryCTA": {
+                    "label": "Start Your Project",
+                    "link": "/contact"
+                },
+                "secondaryCTA": {
+                    "label": "View Portfolio",
+                    "link": "/portfolio"
+                },
+                "stats": [
+                    {
+                        "value": "200+",
+                        "label": "Releases Tested"
+                    },
+                    {
+                        "value": "99.9%",
+                        "label": "Avg. Bug-Free Releases"
+                    },
+                    {
+                        "value": "24/7",
+                        "label": "Support Availability"
+                    }
+                ]
+            },
+            "overview": {
+                "what": "Testing, monitoring, and support services to keep applications secure and reliable.",
+                "who": "Startups, SMEs, and Enterprises",
+                "why": "Build scalable, secure, and future-ready quality & support solutions backed by a measurable track record."
+            },
+            "problems": [
+                "Bugs reach production because testing isn't part of the release process",
+                "Performance issues only surface after real users hit them",
+                "Security vulnerabilities go undetected until it's too late",
+                "There's no dedicated team to handle ongoing maintenance and support"
+            ],
+            "subServices": [
+                {
+                    "title": "Quality Assurance",
+                    "description": "Manual and automated testing to catch issues before they reach your users."
+                },
+                {
+                    "title": "Performance Testing",
+                    "description": "Load and stress testing to confirm your application holds up under real traffic."
+                },
+                {
+                    "title": "Security Audits",
+                    "description": "Vulnerability assessments with clear, prioritized remediation guidance."
+                },
+                {
+                    "title": "Maintenance",
+                    "description": "Ongoing bug fixes, dependency updates, and platform upkeep."
+                },
+                {
+                    "title": "Technical Support",
+                    "description": "Responsive support plans so issues get resolved before they impact users."
+                }
+            ],
+            "process": [
+                "Discovery",
+                "Planning",
+                "Design",
+                "Development",
+                "Testing",
+                "Launch & Support"
+            ],
+            "features": [
+                "Automated Regression Testing",
+                "Load & Performance Testing",
+                "Vulnerability Scanning",
+                "24/7 Uptime Monitoring",
+                "SLA-Backed Support Plans"
+            ],
+            "technologies": [
+                "Playwright",
+                "Cypress",
+                "Jest",
+                "Sentry",
+                "GitHub Actions"
+            ],
+            "industries": [
+                "Healthcare",
+                "Education",
+                "FinTech",
+                "E-Commerce",
+                "Logistics",
+                "Real Estate",
+                "Startups",
+                "Enterprise"
+            ],
+            "whyChooseUs": [
+                "Dedicated QA Engineers",
+                "Security-First Testing Approach",
+                "Fast Incident Response Times",
+                "Flexible Monthly Support Plans",
+                "Detailed Test & Audit Reporting"
+            ],
+            "caseStudies": [
+                {
+                    "title": "Hardening a Healthcare Platform's Security & Uptime",
+                    "client": "A digital healthcare provider",
+                    "problem": "Frequent unplanned downtime and an unaudited codebase put patient data and trust at risk.",
+                    "solution": "We implemented automated regression testing, a security audit, and 24/7 monitoring with alerting.",
+                    "technologies": [
+                        "Playwright",
+                        "Cypress",
+                        "Jest",
+                        "Sentry"
+                    ],
+                    "impact": "Unplanned downtime dropped by 90% and the security audit closed 14 vulnerabilities before they could be exploited."
+                }
+            ],
+            "faqs": [
+                {
+                    "question": "Do you provide ongoing maintenance?",
+                    "answer": "Yes, through flexible monthly or custom support plans."
+                },
+                {
+                    "question": "Can you test existing applications?",
+                    "answer": "Yes, including functional, performance, and regression testing."
+                },
+                {
+                    "question": "Do you perform security audits?",
+                    "answer": "Yes, we assess vulnerabilities and provide prioritized remediation steps."
+                },
+                {
+                    "question": "What support plans do you offer?",
+                    "answer": "Monthly retainer and custom enterprise support plans."
+                }
+            ],
+            "cta": {
+                "heading": "Ready to Get Started with Quality & Support?",
+                "description": "Let's discuss your requirements and build a solution that drives measurable business results.",
+                "buttons": [
+                    {
+                        "label": "Start Your Project",
+                        "link": "/contact"
+                    },
+                    {
+                        "label": "Schedule a Consultation",
+                        "link": "/contact"
+                    }
+                ]
+            },
+            "seo": {
+                "metaTitle": "Quality & Support Services | [Your Company]",
+                "metaDescription": "QA testing, security audits, and ongoing technical support to keep applications reliable and secure."
+            },
+            "icon": "shield-check"
+        }
+    ]
+}
