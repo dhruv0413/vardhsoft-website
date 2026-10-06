@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ showPortfolio = false, brandText
             <Link href="/" className="flex items-center gap-2.5 group">
               <div className="relative h-8 w-[28px] overflow-hidden flex-shrink-0 flex items-center justify-start">
                 <Image
-                  src="/Logo.png"
+                  src="/logo.png"
                   alt="VardhSoft Logo Mark"
                   width={180}
                   height={40}

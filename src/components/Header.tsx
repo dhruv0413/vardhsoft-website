@@ -127,7 +127,7 @@ export const Header: React.FC<HeaderProps> = ({ services = [], industries = [], 
             <Link href="/" className="flex items-center gap-2.5 group">
               <div className="relative h-8 w-[28px] sm:h-9 sm:w-[32px] overflow-hidden flex-shrink-0 flex items-center justify-start">
                 <Image
-                  src="/Logo.png"
+                  src="/logo.png"
                   alt="VardhSoft Logo Mark"
                   width={220}
                   height={48}
