@@ -1,10 +1,25 @@
 // Careers collection schema configuration for VardhSoft
 import type { CollectionConfig } from 'payload'
+import { revalidatePathHelper } from '../lib/revalidate'
 
 export const Careers: CollectionConfig = {
   slug: 'careers',
   admin: {
     useAsTitle: 'title',
+  },
+  hooks: {
+    afterChange: [
+      () => {
+        revalidatePathHelper('/careers')
+        revalidatePathHelper('/sitemap')
+      },
+    ],
+    afterDelete: [
+      () => {
+        revalidatePathHelper('/careers')
+        revalidatePathHelper('/sitemap')
+      },
+    ],
   },
   fields: [
     {

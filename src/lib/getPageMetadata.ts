@@ -39,7 +39,7 @@ export async function getPageMetadata(
     // Cast via unknown to safely access new SEO fields not yet in payload-types.ts
     // Run `npm run generate:types` after deployment to fully type these fields.
     const fields = PAGE_SEO_FIELDS[page]
-    const s = settings as unknown as Record<string, string | null | undefined>
+    const s = (settings || {}) as unknown as Record<string, string | null | undefined>
     const title = s[fields.title] || defaults.title
     const description = s[fields.description] || defaults.description
 

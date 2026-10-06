@@ -18,10 +18,10 @@ export default async function ContactPage() {
   const settings = await payload.findGlobal({ slug: 'website-settings' })
 
   const contactInfo = {
-    email: settings.email || 'info@vardhsoft.com',
-    phone: settings.phone || '+91 79 XXXX XXXX',
-    address: settings.address || 'Ahmedabad, Gujarat, India',
-    companyName: settings.companyName || 'VardhSoft',
+    email: settings?.email || 'vardhsoft.connect@gmail.com',
+    phone: settings?.phone || '+91 98765 43210',
+    address: settings?.address || 'Ahmedabad, India',
+    companyName: settings?.companyName || 'VardhSoft',
   }
 
   return (
@@ -31,16 +31,16 @@ export default async function ContactPage() {
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-teal-500/20 bg-teal-500/5 text-teal-300 text-xs font-semibold uppercase tracking-wider mb-4 animate-pulse">
+        <div className="text-center max-w-3xl mx-auto mb-14">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full border border-teal-500/20 bg-teal-500/5 text-teal-300 text-xs font-semibold uppercase tracking-wider mb-4 animate-pulse">
             <Sparkles className="h-3.5 w-3.5" />
-            Connect With Us
+            CONNECT WITH US
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-teal-300 via-emerald-200 to-indigo-300 bg-clip-text text-transparent">
-            Let&apos;s Build Something Premium
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-teal-300 via-emerald-200 to-indigo-300 bg-clip-text text-transparent leading-tight">
+            Let&apos;s Build Something That Matters
           </h1>
-          <p className="mt-4 text-slate-400 text-base sm:text-lg">
-            Have a project in mind? Submit your inquiry, and our engineers will get in touch with you.
+          <p className="mt-4 text-slate-400 text-base sm:text-lg leading-relaxed">
+            Tell us what you&apos;re looking to build. We&apos;ll review your requirements and get back to you with the next steps.
           </p>
         </div>
 

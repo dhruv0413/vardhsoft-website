@@ -22,30 +22,30 @@ export default async function TechnologiesPage() {
       collection: 'technologies',
       limit: 100,
       sort: 'name',
-    }),
+    }).catch(() => ({ docs: [] })),
     payload.findGlobal({
       slug: 'website-settings',
       depth: 1,
-    }),
+    }).catch(() => null),
     payload.find({
       collection: 'projects',
       limit: 1,
       depth: 0,
-    })
+    }).catch(() => ({ docs: [], totalDocs: 0 }))
   ])
 
   // Format technologies for the client component
-  const formattedTech = techRes.docs.map((tech) => ({
+  const formattedTech = (techRes?.docs || []).map((tech) => ({
     id: tech.id,
     name: tech.name,
     category: tech.category,
     description: tech.description || '',
   }))
 
-  const whyTechPillars = settings.whyTechPillars || []
-  const detailedWorkflow = settings.detailedWorkflow || []
-  const faqs = settings.faqs || []
-  const hasProjects = projectsRes.totalDocs > 0
+  const whyTechPillars = settings?.whyTechPillars || []
+  const detailedWorkflow = settings?.detailedWorkflow || []
+  const faqs = settings?.faqs || []
+  const hasProjects = (projectsRes?.totalDocs ?? 0) > 0
 
   return (
     <TechnologiesClientPage 

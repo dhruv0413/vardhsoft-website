@@ -1,9 +1,24 @@
 import type { CollectionConfig } from 'payload'
+import { revalidatePathHelper } from '../lib/revalidate'
 
 export const Testimonials: CollectionConfig = {
   slug: 'testimonials',
   admin: {
     useAsTitle: 'clientName',
+  },
+  hooks: {
+    afterChange: [
+      () => {
+        revalidatePathHelper('/')
+        revalidatePathHelper('/services')
+      },
+    ],
+    afterDelete: [
+      () => {
+        revalidatePathHelper('/')
+        revalidatePathHelper('/services')
+      },
+    ],
   },
   fields: [
     {

@@ -124,17 +124,20 @@ export const Header: React.FC<HeaderProps> = ({ services = [], industries = [], 
         <div className="flex items-center justify-between h-16">
           {/* Logo & Brand Name */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-10 h-10 overflow-hidden rounded-lg bg-slate-900 border border-white/10 flex items-center justify-center">
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <div className="relative h-8 w-[28px] sm:h-9 sm:w-[32px] overflow-hidden flex-shrink-0 flex items-center justify-start">
                 <Image
-                  src="/logo.png"
-                  alt="VardhSoft Logo"
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-300"
+                  src="/Logo.png"
+                  alt="VardhSoft Logo Mark"
+                  width={220}
+                  height={48}
+                  className="max-w-none h-8 sm:h-9 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300"
+                  priority
+                  unoptimized
                 />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-teal-400 via-emerald-400 to-indigo-400 bg-clip-text text-transparent group-hover:opacity-90 transition-opacity">
-                VardhSoft
+              <span className="text-xl sm:text-2xl font-black tracking-tight text-white group-hover:text-teal-300 transition-colors">
+                Vardh<span className="text-teal-400">Soft</span>
               </span>
             </Link>
           </div>
@@ -236,7 +239,7 @@ export const Header: React.FC<HeaderProps> = ({ services = [], industries = [], 
                                         className="w-full flex items-center justify-between gap-3 px-3 py-2 rounded-xl border border-transparent hover:border-white/5 hover:bg-slate-900/40 text-slate-300 hover:text-teal-400 transition-all duration-150 group/sub"
                                       >
                                         <span className="text-xs font-bold leading-none">{sub.title}</span>
-                                        <div className="flex-shrink-0 p-1.5 rounded-lg bg-teal-950/40 border border-teal-500/15 text-teal-400 flex items-center justify-center group-hover/sub:bg-teal-500 group-hover/sub:text-slate-950 group-hover/sub:border-teal-500 transition-colors duration-200">
+                                        <div className="flex-shrink-0 p-1.5 rounded-lg bg-teal-50/80 dark:bg-teal-950/40 border border-teal-500/15 text-teal-400 flex items-center justify-center group-hover/sub:bg-teal-500 group-hover/sub:text-zinc-950 group-hover/sub:border-teal-500 transition-colors duration-200">
                                           <ArrowRight className="h-3.5 w-3.5 group-hover/sub:translate-x-0.5 transition-transform duration-200" />
                                         </div>
                                       </Link>
@@ -345,7 +348,7 @@ export const Header: React.FC<HeaderProps> = ({ services = [], industries = [], 
             ))}
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-zinc-50 shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
             >
               Contact Us
             </Link>

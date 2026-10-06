@@ -106,7 +106,27 @@ export default function ServiceContactForm({ currentServiceName }: ServiceContac
                 type="tel"
                 name="phone"
                 id="phone"
-                placeholder="+1 234 567 890"
+                placeholder="+91 98765 43210"
+                onInput={(e) => {
+                  let val = e.currentTarget.value
+                  val = val.replace(/[^0-9+\s\-]/g, '')
+                  if (val.includes('+')) {
+                    val = (val.startsWith('+') ? '+' : '') + val.replace(/\+/g, '')
+                  }
+                  const maxDigits = val.startsWith('+91') ? 12 : val.startsWith('+') ? 13 : 10
+                  let count = 0
+                  let trimmed = ''
+                  for (const char of val) {
+                    if (/\d/.test(char)) {
+                      count++
+                      if (count > maxDigits) break
+                    }
+                    trimmed += char
+                  }
+                  e.currentTarget.value = trimmed
+                }}
+                pattern="^(\+\d{1,3}[\s\-]?)?(\d{5}[\s\-]?\d{5}|\d{10})$"
+                title="Please enter a valid 10-digit phone number (e.g., 9876543210 or +91 9876543210)"
                 className="w-full px-4 py-3 rounded-lg bg-slate-950 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-colors text-sm"
               />
             </div>

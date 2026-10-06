@@ -295,8 +295,8 @@ export default function BookingClient({ timeSlots }: BookingClientProps) {
                 </p>
                 <p className="text-xs text-slate-500">
                   Need assistance? Contact us at{' '}
-                  <a href="mailto:info@vardhsoft.com" className="text-indigo-400 hover:text-indigo-300 underline font-medium">
-                    info@vardhsoft.com
+                  <a href="mailto:vardhsoft.connect@gmail.com" className="text-indigo-400 hover:text-indigo-300 underline font-medium">
+                    vardhsoft.connect@gmail.com
                   </a>
                 </p>
               </div>
@@ -310,7 +310,7 @@ export default function BookingClient({ timeSlots }: BookingClientProps) {
                   </div>
                   <div className="flex items-center gap-3 text-slate-300 text-sm">
                     <Clock className="h-5 w-5 text-indigo-400 shrink-0" />
-                    <span>{selectedTime} (IST - Mumbai Time)</span>
+                    <span>{selectedTime} (IST - India Time)</span>
                   </div>
                   <div className="pt-3 border-t border-white/5 text-[11px] text-slate-500 leading-relaxed">
                     Meeting Link: <span className="text-slate-400">Will be sent to your email once confirmed</span>.

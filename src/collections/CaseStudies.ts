@@ -1,9 +1,32 @@
 import type { CollectionConfig } from 'payload'
+import { revalidatePathHelper } from '../lib/revalidate'
 
 export const CaseStudies: CollectionConfig = {
   slug: 'case-studies',
   admin: {
     useAsTitle: 'title',
+  },
+  hooks: {
+    afterChange: [
+      ({ doc }) => {
+        revalidatePathHelper('/case-studies')
+        if (doc.slug) {
+          revalidatePathHelper(`/case-studies/${doc.slug}`)
+        }
+        revalidatePathHelper('/')
+        revalidatePathHelper('/sitemap')
+      },
+    ],
+    afterDelete: [
+      ({ doc }) => {
+        revalidatePathHelper('/case-studies')
+        if (doc.slug) {
+          revalidatePathHelper(`/case-studies/${doc.slug}`)
+        }
+        revalidatePathHelper('/')
+        revalidatePathHelper('/sitemap')
+      },
+    ],
   },
   fields: [
     {

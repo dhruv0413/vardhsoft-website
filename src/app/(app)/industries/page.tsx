@@ -62,38 +62,39 @@ const TRUST_TAGS: Record<string, string> = {
 
 export default async function IndustriesHubPage() {
   const payload = await getPayload({ config })
-  const settings = await payload.findGlobal({
-    slug: 'website-settings',
-  })
-  
-  const industriesRes = await payload.find({
-    collection: 'industries',
-    limit: 100,
-    sort: 'title',
-  })
+  const [settings, industriesRes] = await Promise.all([
+    payload.findGlobal({
+      slug: 'website-settings',
+    }).catch(() => null),
+    payload.find({
+      collection: 'industries',
+      limit: 100,
+      sort: 'title',
+    }).catch(() => ({ docs: [] }))
+  ])
 
   // Normalize settings or fallback to static defaults
-  const indHeroEyebrow = settings.indHeroEyebrow || 'Industries We Serve'
-  const indHeroHeadline = settings.indHeroHeadline || 'Software That Understands Your Industry, Not Just Your Feature List'
-  const indHeroSubHeadline = settings.indHeroSubHeadline || 'Every industry has its own workflows, pressures, and non-negotiables. We build software that reflects that — starting with how your business actually operates, not a generic template stretched across every client we work with.'
-  const indHeroPrimaryCtaText = settings.indHeroPrimaryCtaText || 'Find Your Industry'
-  const indHeroPrimaryCtaLink = settings.indHeroPrimaryCtaLink || '#industries-grid'
-  const indHeroSecondaryCtaText = settings.indHeroSecondaryCtaText || 'Start a Conversation'
-  const indHeroSecondaryCtaLink = settings.indHeroSecondaryCtaLink || '/contact'
+  const indHeroEyebrow = settings?.indHeroEyebrow || 'Industries We Serve'
+  const indHeroHeadline = settings?.indHeroHeadline || 'Software That Understands Your Industry, Not Just Your Feature List'
+  const indHeroSubHeadline = settings?.indHeroSubHeadline || 'Every industry has its own workflows, pressures, and non-negotiables. We build software that reflects that — starting with how your business actually operates, not a generic template stretched across every client we work with.'
+  const indHeroPrimaryCtaText = settings?.indHeroPrimaryCtaText || 'Find Your Industry'
+  const indHeroPrimaryCtaLink = settings?.indHeroPrimaryCtaLink || '#industries-grid'
+  const indHeroSecondaryCtaText = settings?.indHeroSecondaryCtaText || 'Start a Conversation'
+  const indHeroSecondaryCtaLink = settings?.indHeroSecondaryCtaLink || '/contact'
   
-  const indOverviewContent = settings.indOverviewContent || ''
-  const indOverviewSecondaryText = settings.indOverviewSecondaryText || ''
-  const indApproachItems = settings.indApproachItems || []
-  const indWhyItMattersItems = settings.indWhyItMattersItems || []
-  const indProcessSteps = settings.indProcessSteps || []
-  const indFaqs = settings.indFaqs || []
-  const indCtaHeadline = settings.indCtaHeadline || ''
-  const indCtaSubText = settings.indCtaSubText || ''
-  const indCtaPrimaryBtnText = settings.indCtaPrimaryBtnText || ''
-  const indCtaSecondaryBtnText = settings.indCtaSecondaryBtnText || ''
-  const indCtaMicroLine = settings.indCtaMicroLine || ''
+  const indOverviewContent = settings?.indOverviewContent || ''
+  const indOverviewSecondaryText = settings?.indOverviewSecondaryText || ''
+  const indApproachItems = settings?.indApproachItems || []
+  const indWhyItMattersItems = settings?.indWhyItMattersItems || []
+  const indProcessSteps = settings?.indProcessSteps || []
+  const indFaqs = settings?.indFaqs || []
+  const indCtaHeadline = settings?.indCtaHeadline || ''
+  const indCtaSubText = settings?.indCtaSubText || ''
+  const indCtaPrimaryBtnText = settings?.indCtaPrimaryBtnText || ''
+  const indCtaSecondaryBtnText = settings?.indCtaSecondaryBtnText || ''
+  const indCtaMicroLine = settings?.indCtaMicroLine || ''
 
-  const industriesList = industriesRes.docs.map((doc: Industry) => {
+  const industriesList = (industriesRes?.docs || []).map((doc: Industry) => {
     return {
       title: doc.title,
       slug: doc.slug,

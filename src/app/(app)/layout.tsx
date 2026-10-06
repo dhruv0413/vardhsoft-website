@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import ThemeSwitcher from "@/components/ThemeSwitcher";
 import { getPayload } from 'payload'
 import config from '@payload-config'
-import Script from 'next/script'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,34 +27,46 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const payload = await getPayload({ config })
-  const [servicesRes, industriesRes, projectsRes, settings] = await Promise.all([
-    payload.find({
-      collection: 'services',
-      sort: 'title',
-      limit: 100,
-      depth: 1,
-    }),
-    payload.find({
-      collection: 'industries',
-      sort: 'title',
-      limit: 100,
-      depth: 1,
-    }),
-    payload.find({
-      collection: 'projects',
-      limit: 1,
-      depth: 0,
-    }),
-    payload.findGlobal({
-      slug: 'website-settings',
-    }),
-  ])
+  let services: any[] = []
+  let industries: any[] = []
+  let showPortfolio = false
+  let footerBrandText = 'Empowering businesses globally with state-of-the-art software engineering, design, and consulting.'
 
-  const services = servicesRes.docs
-  const industries = industriesRes.docs
-  const showPortfolio = projectsRes.totalDocs > 0
-  const footerBrandText = settings.footerBrandText || 'Empowering businesses globally with state-of-the-art software engineering, design, and consulting.'
+  try {
+    const payload = await getPayload({ config })
+    const [servicesRes, industriesRes, projectsRes, settings] = await Promise.all([
+      payload.find({
+        collection: 'services',
+        sort: 'title',
+        limit: 100,
+        depth: 1,
+        pagination: false,
+      }).catch(() => ({ docs: [] })),
+      payload.find({
+        collection: 'industries',
+        sort: 'title',
+        limit: 100,
+        depth: 1,
+        pagination: false,
+      }).catch(() => ({ docs: [] })),
+      payload.find({
+        collection: 'projects',
+        limit: 1,
+        depth: 0,
+        pagination: false,
+      }).catch(() => ({ docs: [], totalDocs: 0 })),
+      payload.findGlobal({
+        slug: 'website-settings',
+      }).catch(() => null),
+    ])
+
+    services = servicesRes?.docs || []
+    industries = industriesRes?.docs || []
+    showPortfolio = Boolean((projectsRes?.docs && projectsRes.docs.length > 0) || (projectsRes?.totalDocs && projectsRes.totalDocs > 0))
+    footerBrandText = settings?.footerBrandText || footerBrandText
+  } catch (error) {
+    console.error('Failed to load layout data from Payload CMS:', error)
+  }
 
   // Format services to plain objects for the client component
   const plainServices = services.map(service => ({
@@ -64,7 +75,7 @@ export default async function RootLayout({
     slug: service.slug,
     icon: service.icon,
     shortDescription: service.shortDescription,
-    subServices: (service.subServices ?? []).map((sub) => ({
+    subServices: (service.subServices ?? []).map((sub: any) => ({
       title: (sub as { title: string }).title,
       description: (sub as { description?: string }).description ?? '',
     })),
@@ -86,9 +97,8 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <Script
+        <script
           id="theme-initializer"
-          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function() {
@@ -105,7 +115,7 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 font-sans selection:bg-teal-500/30 selection:text-teal-200">
+      <body className="min-h-full flex flex-col bg-slate-950 text-slate-100 font-sans selection:bg-teal-500/30 selection:text-slate-100">
         <Header services={plainServices} industries={plainIndustries} showPortfolio={showPortfolio} />
         <main className="flex-grow flex flex-col">{children}</main>
         <Footer showPortfolio={showPortfolio} brandText={footerBrandText} />

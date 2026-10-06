@@ -1,10 +1,31 @@
 import type { CollectionConfig } from 'payload'
+import { revalidatePathHelper } from '../lib/revalidate'
 
 export const Industries: CollectionConfig = {
   slug: 'industries',
   admin: {
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug'],
+  },
+  hooks: {
+    afterChange: [
+      ({ doc }) => {
+        revalidatePathHelper('/industries')
+        if (doc.slug) {
+          revalidatePathHelper(`/industries/${doc.slug}`)
+        }
+        revalidatePathHelper('/', 'layout')
+      },
+    ],
+    afterDelete: [
+      ({ doc }) => {
+        revalidatePathHelper('/industries')
+        if (doc.slug) {
+          revalidatePathHelper(`/industries/${doc.slug}`)
+        }
+        revalidatePathHelper('/', 'layout')
+      },
+    ],
   },
   fields: [
     {

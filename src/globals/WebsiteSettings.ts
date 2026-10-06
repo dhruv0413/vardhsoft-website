@@ -1,7 +1,15 @@
 import type { GlobalConfig } from 'payload'
+import { revalidatePathHelper } from '../lib/revalidate'
 
 export const WebsiteSettings: GlobalConfig = {
   slug: 'website-settings',
+  hooks: {
+    afterChange: [
+      () => {
+        revalidatePathHelper('/', 'layout')
+      },
+    ],
+  },
   fields: [
     {
       type: 'tabs',
@@ -36,19 +44,19 @@ export const WebsiteSettings: GlobalConfig = {
               name: 'email',
               type: 'email',
               required: true,
-              defaultValue: 'info@vardhsoft.com',
+              defaultValue: 'vardhsoft.connect@gmail.com',
             },
             {
               name: 'phone',
               type: 'text',
               required: false,
-              defaultValue: '+91 79 XXXX XXXX',
+              defaultValue: '+91 98765 43210',
             },
             {
               name: 'address',
               type: 'textarea',
               required: false,
-              defaultValue: 'Ahmedabad, Gujarat, India',
+              defaultValue: 'Ahmedabad, India',
             },
             {
               name: 'linkedinUrl',
@@ -158,21 +166,24 @@ export const WebsiteSettings: GlobalConfig = {
             {
               name: 'qualityStats',
               type: 'array',
-              label: 'VardhSoft Quality Parameters Statistics',
+              label: 'Capability Strip',
               fields: [
                 {
                   name: 'value',
                   type: 'text',
+                  label: 'Capability Title',
                   required: true,
                 },
                 {
                   name: 'label',
                   type: 'text',
+                  label: 'Capability Subtitle / Description',
                   required: true,
                 },
                 {
                   name: 'subtext',
                   type: 'text',
+                  label: 'Additional Subtext (Optional)',
                   required: false,
                 },
               ],

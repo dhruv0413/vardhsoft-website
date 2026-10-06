@@ -192,7 +192,7 @@ export default function LegalLayout({ initialTab }: LegalLayoutProps) {
                 onClick={() => handleTabChange(tab.id as TabType)}
                 className={`px-3 py-3 rounded-lg text-xs font-bold text-center flex items-center justify-center gap-2.5 transition-all duration-300 ${
                   activeTab === tab.id
-                    ? 'bg-teal-500 text-slate-950 font-black shadow-lg shadow-teal-500/20'
+                    ? 'bg-teal-500 text-zinc-950 font-black shadow-lg shadow-teal-500/20'
                     : 'text-slate-400 hover:text-slate-200 hover:bg-white/5'
                 }`}
               >
@@ -767,7 +767,7 @@ export default function LegalLayout({ initialTab }: LegalLayoutProps) {
                 {currentTabIdx < tabsList.length - 1 ? (
                   <button
                     onClick={() => handleTabChange(tabsList[currentTabIdx + 1])}
-                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-teal-500 text-slate-950 font-bold text-xs hover:brightness-110 shadow-lg shadow-teal-500/10 transition-all"
+                    className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-teal-500 text-zinc-950 font-bold text-xs hover:brightness-110 shadow-lg shadow-teal-500/10 transition-all"
                   >
                     Next
                     <ArrowRight className="h-3.5 w-3.5" />

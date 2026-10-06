@@ -1,10 +1,67 @@
 import type { CollectionConfig } from 'payload'
+import { revalidatePathHelper } from '../lib/revalidate'
 
 export const SubServices: CollectionConfig = {
   slug: 'sub-services',
   admin: {
     useAsTitle: 'title',
     defaultColumns: ['title', 'slug', 'parentService'],
+  },
+  hooks: {
+    afterChange: [
+      async ({ doc, req }) => {
+        revalidatePathHelper('/services')
+        let parentSlug = ''
+        if (doc.parentService) {
+          if (typeof doc.parentService === 'object' && 'slug' in doc.parentService) {
+            parentSlug = (doc.parentService as any).slug
+          } else {
+            try {
+              const parent = await req.payload.findByID({
+                collection: 'services',
+                id: typeof doc.parentService === 'object' ? (doc.parentService as any).id : doc.parentService,
+                depth: 0,
+              })
+              parentSlug = parent.slug
+            } catch (e) {
+              console.error('Failed to fetch parent service for revalidation:', e)
+            }
+          }
+        }
+        if (parentSlug) {
+          revalidatePathHelper(`/services/${parentSlug}`)
+          revalidatePathHelper(`/services/${parentSlug}/${doc.slug}`)
+        }
+        revalidatePathHelper('/', 'layout')
+      },
+    ],
+    afterDelete: [
+      async ({ doc, req }) => {
+        revalidatePathHelper('/services')
+        let parentSlug = ''
+        if (doc.parentService) {
+          if (typeof doc.parentService === 'object' && 'slug' in doc.parentService) {
+            parentSlug = (doc.parentService as any).slug
+          } else {
+            try {
+              const parent = await req.payload.findByID({
+                collection: 'services',
+                id: typeof doc.parentService === 'object' ? (doc.parentService as any).id : doc.parentService,
+                depth: 0,
+              })
+              parentSlug = parent.slug
+            } catch (e) {
+              console.error('Failed to fetch parent service for revalidation:', e)
+            }
+          }
+        }
+        if (parentSlug) {
+          revalidatePathHelper(`/services/${parentSlug}`)
+          revalidatePathHelper(`/services/${parentSlug}/${doc.slug}`)
+        }
+        revalidatePathHelper('/', 'layout')
+      },
+    ],
   },
   fields: [
     {

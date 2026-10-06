@@ -1247,9 +1247,9 @@ async function seed() {
       companyName: 'VardhSoft',
       tagline: 'Empowering Businesses with Cutting-Edge Software Solutions',
       footerBrandText: 'Empowering businesses globally with state-of-the-art software engineering, design, and consulting.',
-      email: 'info@vardhsoft.com',
-      phone: '+1234567890',
-      address: 'Mumbai, India',
+      email: 'vardhsoft.connect@gmail.com',
+      phone: '+91 98765 43210',
+      address: 'Ahmedabad, India',
       linkedinUrl: 'https://linkedin.com/company/vardhsoft',
       githubUrl: 'https://github.com/vardhsoft',
       instagramUrl: 'https://instagram.com/vardhsoft',
@@ -1399,84 +1399,80 @@ async function seed() {
         }
       ],
       storyParagraphs: [
-        { text: 'Every company starts with a problem worth solving. Vardhsoft started with a simple frustration: too many small and mid-sized businesses were being handed bloated, outdated, or overpriced software — built by agencies that cared more about the invoice than the outcome.' },
-        { text: "We founded Vardhsoft to do it differently. We're a young company, and we say that with pride, not apology. Being new means we haven't picked up the bad habits that slow larger agencies down — no rigid processes, no layers of account managers between you and the people actually writing your code, no recycled templates dressed up as 'custom solutions.' What we do have is genuine curiosity, a hunger to prove ourselves on every single project, and a commitment to modern engineering practices from day one." },
-        { text: "Right from our launch projects, we didn't just talk about capability — we shipped it. We built a complete Panjarapol (animal shelter) Management System using Next.js, designed to help a real institution manage animals, records, and operations digitally instead of on paper. In the same breath, we launched a full Shopify-based clothing store, giving a fashion brand a professional, conversion-ready online presence." },
-        { text: 'Two very different problems. Two very different industries. One consistent standard of work.' },
-        { text: "That's the story of Vardhsoft so far — and honestly, it's just the first chapter. We're building this company the same way we build software: iteratively, transparently, and with the end user always in mind. We invite you to grow with us, not after we've 'made it,' but right from the start — when your project gets our full, undivided attention." }
+        { text: 'VardhSoft started with a simple belief: software should make a business better, not make its work more complicated.' },
+        { text: 'We start by understanding how a business actually operates—its goals, workflows, challenges, and users. From there, we turn real requirements into practical digital products, choosing technology with purpose rather than complexity.' },
+        { text: 'Different problems. Different industries. One consistent standard of work.' },
+        { text: 'As VardhSoft grows, our focus remains simple: build useful software, learn from every project, and keep raising the standard of our work.' }
       ],
       milestones: [
         {
-          badge: 'Institutional Systems',
+          badge: 'INSTITUTIONAL SYSTEMS',
           title: 'Panjarapol Animal Shelter CMS',
-          description: 'A complete digital record, health registry, and operations platform replacing manual sheets with full performance Next.js configurations.',
+          description: 'A digital management platform bringing animal records, health information, and shelter operations into one centralized system.',
           tags: 'Next.js, Node.js, MongoDB'
         },
         {
-          badge: 'E-Commerce Development',
+          badge: 'E-COMMERCE DEVELOPMENT',
           title: 'Custom Clothing Store',
-          description: 'Tailored e-commerce platform built directly on Shopify APIs, prioritizing catalog conversion, mobile responsiveness, and streamlined checkout.',
+          description: "A tailored e-commerce experience built around the brand's products, customer journey, and online sales requirements.",
           tags: 'Shopify API, Liquid, CSS3'
         }
       ],
-      missionStatement: 'To help startups, small businesses, and growing brands bring their ideas to life through reliable, scalable, and thoughtfully engineered software — without the overhead, delays, or guesswork that traditional agencies bring.',
-      visionStatement: 'To become a trusted long-term technology partner for businesses across industries — known not for our size, but for the quality of our code, the honesty of our communication, and the results we consistently deliver.',
+      missionStatement: 'To help businesses turn complex challenges into clear, useful solutions that improve the way they work and serve their customers.',
+      visionStatement: 'To become a technology partner businesses can rely on for the ideas they want to bring to life and the challenges they need to solve.',
       ideFiles: [
         {
-          filename: 'vardhsoft.ts',
-          content: `import { Company } from 'vardhsoft';\n\nexport default async function initialize() {\n  const Vardhsoft = new Company({\n    philosophy: "Zero Bloat, Founder's Mindset",\n    deliverySpeed: "Iterative & Transparent",\n    overhead: "None. Direct developer communication."\n  });\n\n  await Vardhsoft.build({\n    standards: ["Clean Code", "Peak Performance", "SEO Compliance"],\n    outcome: "Clean, scalable software that works hard."\n  });\n}`
+          filename: 'about.ts',
+          content: `const VardhSoft = {\n\n  purpose:\n    "Solve real business problems",\n\n  approach:\n    "Understand before we build",\n\n  engineering:\n    "Simple. Reliable. Maintainable.",\n\n  mindset:\n    "Build with intent",\n\n  goal:\n    "Software that evolves"\n};`
         },
         {
-          filename: 'deliveries.json',
-          content: `{\n  "featuredDeliveries": {\n    "animalShelterCMS": {\n      "platform": "Next.js",\n      "database": "MongoDB",\n      "impact": "Digitized paper records for Panjarapol management."\n    },\n    "clothingBrandStore": {\n      "platform": "Shopify",\n      "customTheme": true,\n      "impact": "Conversion-optimized clothing storefront launched."\n    }\n  }\n}`
+          filename: 'principles.ts',
+          content: `export const principles = [\n  "Problem First, Tech Second",\n  "Direct Developer Access",\n  "Clean & Scalable Code",\n  "Transparent Iteration"\n];`
         },
         {
-          filename: 'our_stack.yml',
-          content: `CoreLanguages:\n  - TypeScript\n  - JavaScript (ES6+)\nFrameworks:\n  - Next.js (App Router)\n  - React.js\nDatabases:\n  - MongoDB\n  - PostgreSQL\nDeployment:\n  - Vercel\n  - AWS (EC2/S3)`
+          filename: 'approach.yml',
+          content: `approach:\n  phase_1: "Deconstruct Problem"\n  phase_2: "Architect System"\n  phase_3: "Agile Development"\n  phase_4: "Deploy & Evolve"`
+        },
+        {
+          filename: 'vision.md',
+          content: `# Vision & Mission\n\nTurn real business challenges\ninto thoughtful digital products\nbuilt to evolve.`
         }
       ],
       coreValues: [
         {
-          title: 'Client-Centric Excellence',
-          description: "We prioritize our clients' goals, delivering high-impact software solutions with speed, clarity, and dedication.",
+          title: '01 — Learn by Doing',
+          description: 'We believe the best growth comes from real experience. We encourage hands-on learning, curiosity, and opportunities to build practical skills through real projects.',
           bgGrad: 'from-teal-500/10 to-emerald-500/10',
           borderGlow: 'rgba(20, 184, 166, 0.15)',
-          icon: 'Gem'
-        },
-        {
-          title: 'Continuous Growth & Learning',
-          description: 'We foster an environment of continuous learning, supporting our team in mastering new technologies and expanding their skillsets.',
-          bgGrad: 'from-indigo-500/10 to-blue-500/10',
-          borderGlow: 'rgba(99, 102, 241, 0.15)',
           icon: 'GraduationCap'
         },
         {
-          title: 'Extreme Ownership',
-          description: 'We take pride in our work and run projects with a deep sense of responsibility, driving outcomes and learning from every challenge.',
-          bgGrad: 'from-purple-500/10 to-pink-500/10',
-          borderGlow: 'rgba(168, 85, 247, 0.15)',
+          title: '02 — Take Ownership',
+          description: 'We give people the space to take responsibility for their work, make decisions, solve problems, and see their contributions through from idea to delivery.',
+          bgGrad: 'from-indigo-500/10 to-blue-500/10',
+          borderGlow: 'rgba(99, 102, 241, 0.15)',
           icon: 'ShieldCheck'
         },
         {
-          title: 'Collaborative Innovation',
-          description: 'Great software is built by great teams. We encourage open collaboration, active mentorship, and shared problem-solving.',
+          title: '03 — Build Together',
+          description: 'Great software is built by people who communicate and collaborate. We share ideas, ask questions, give feedback, and solve problems as a team.',
           bgGrad: 'from-amber-500/10 to-orange-500/10',
           borderGlow: 'rgba(245, 158, 11, 0.15)',
           icon: 'Users'
         },
         {
-          title: 'Quality without Compromise',
-          description: 'We set a high bar for our engineering standards, delivering clean, maintainable, and high-performing code.',
+          title: '04 — Quality Matters',
+          description: 'We care about doing things properly — from thoughtful solutions and clean code to testing, documentation, and the details that make products reliable.',
           bgGrad: 'from-cyan-500/10 to-teal-500/10',
           borderGlow: 'rgba(6, 182, 212, 0.15)',
           icon: 'Award'
         },
         {
-          title: 'Vibrant Work Culture',
-          description: 'We believe in a healthy work-life balance, celebrating milestones together and enjoying a creative, supportive atmosphere.',
+          title: '05 — A Healthy Work Culture',
+          description: 'We believe people do their best work when they have room to learn, contribute, recharge, and maintain a healthy balance between work and life.',
           bgGrad: 'from-rose-500/10 to-orange-500/10',
           borderGlow: 'rgba(244, 63, 94, 0.15)',
-          icon: 'Coffee'
+          icon: 'HeartPulse'
         }
       ],
       benefits: [

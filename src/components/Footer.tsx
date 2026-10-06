@@ -21,12 +21,19 @@ export const Footer: React.FC<FooterProps> = ({ showPortfolio = false, brandText
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Column */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-3">
-              <div className="relative w-8 h-8 rounded-md bg-slate-900 border border-white/10 flex items-center justify-center">
-                <Image src="/logo.png" alt="VardhSoft Logo" fill className="object-cover" />
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <div className="relative h-8 w-[28px] overflow-hidden flex-shrink-0 flex items-center justify-start">
+                <Image
+                  src="/Logo.png"
+                  alt="VardhSoft Logo Mark"
+                  width={180}
+                  height={40}
+                  className="max-w-none h-8 w-auto object-contain object-left group-hover:scale-105 transition-transform duration-300"
+                  unoptimized
+                />
               </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-teal-400 to-indigo-400 bg-clip-text text-transparent">
-                VardhSoft
+              <span className="text-xl font-black tracking-tight text-white group-hover:text-teal-300 transition-colors">
+                Vardh<span className="text-teal-400">Soft</span>
               </span>
             </Link>
             <p className="text-sm text-slate-400">
@@ -53,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({ showPortfolio = false, brandText
                   Technologies
                 </Link>
               </li>
-              {showPortfolio && (
+              {Boolean(showPortfolio) && (
                 <li>
                   <Link href="/portfolio" className="hover:text-teal-400 transition-colors">
                     Portfolio

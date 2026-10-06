@@ -6,7 +6,7 @@ import BookingClient from './BookingClient'
 import type { WebsiteSetting } from '../../../../payload-types'
 import { getPageMetadata } from '@/lib/getPageMetadata'
 
-export const dynamic = 'force-dynamic'
+
 
 export async function generateMetadata(): Promise<Metadata> {
   return getPageMetadata('book', {
@@ -21,7 +21,7 @@ export default async function BookPage() {
     slug: 'website-settings',
   }) as WebsiteSetting
 
-  const timeSlots = (settings.bookingTimeSlots ?? []).map((t) => t.slot as string)
+  const timeSlots = (settings?.bookingTimeSlots ?? []).map((t) => t.slot as string)
 
   return <BookingClient timeSlots={timeSlots} />
 }

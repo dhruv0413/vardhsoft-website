@@ -1,4 +1,6 @@
+// Projects collection schema configuration for VardhSoft
 import type { CollectionConfig } from 'payload'
+import { revalidatePathHelper } from '../lib/revalidate'
 
 export const Projects: CollectionConfig = {
   slug: 'projects',
@@ -8,6 +10,24 @@ export const Projects: CollectionConfig = {
   },
   admin: {
     useAsTitle: 'title',
+  },
+  hooks: {
+    afterChange: [
+      () => {
+        revalidatePathHelper('/portfolio')
+        revalidatePathHelper('/')
+        revalidatePathHelper('/sitemap')
+        revalidatePathHelper('/', 'layout')
+      },
+    ],
+    afterDelete: [
+      () => {
+        revalidatePathHelper('/portfolio')
+        revalidatePathHelper('/')
+        revalidatePathHelper('/sitemap')
+        revalidatePathHelper('/', 'layout')
+      },
+    ],
   },
   fields: [
     {

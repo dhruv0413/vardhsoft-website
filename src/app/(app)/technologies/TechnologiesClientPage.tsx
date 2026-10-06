@@ -167,7 +167,7 @@ export default function TechnologiesClientPage({
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/contact"
-                className="px-6 py-3 rounded-lg bg-gradient-to-r from-teal-500 to-emerald-500 text-slate-950 font-bold hover:brightness-110 shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 transition-all flex items-center gap-2 text-sm group"
+                className="px-6 py-3 rounded-lg bg-gradient-to-r from-teal-500 to-emerald-500 text-zinc-950 font-bold hover:brightness-110 shadow-lg shadow-teal-500/20 hover:shadow-teal-500/30 transition-all flex items-center gap-2 text-sm group"
               >
                 Discuss Your Tech Stack
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -513,7 +513,7 @@ export default function TechnologiesClientPage({
               <div className="flex flex-wrap justify-center gap-4 pt-4">
                 <Link
                   href="/contact"
-                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-teal-500 to-emerald-500 text-slate-950 font-bold hover:brightness-110 shadow-lg shadow-teal-500/20 transition-all text-sm flex items-center gap-2 group"
+                  className="px-6 py-3 rounded-lg bg-gradient-to-r from-teal-500 to-emerald-500 text-zinc-950 font-bold hover:brightness-110 shadow-lg shadow-teal-500/20 transition-all text-sm flex items-center gap-2 group"
                 >
                   Talk to Our Team
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />

@@ -17,6 +17,27 @@ export async function submitContactForm(prevState: unknown, formData: FormData) 
     return { success: false, error: 'Name, email, and message are required fields.' }
   }
 
+  if (phone && phone.trim() !== '') {
+    const cleaned = phone.trim()
+    const digitsOnly = cleaned.replace(/\D/g, '')
+
+    let isValid = false
+    if (cleaned.startsWith('+91')) {
+      isValid = digitsOnly.length === 12
+    } else if (cleaned.startsWith('+')) {
+      isValid = digitsOnly.length >= 11 && digitsOnly.length <= 13
+    } else {
+      isValid = digitsOnly.length === 10
+    }
+
+    if (!isValid) {
+      return {
+        success: false,
+        error: 'Please enter a valid 10-digit phone number (e.g., 9876543210 or +91 9876543210).',
+      }
+    }
+  }
+
   try {
     const payload = await getPayload({ config })
 
@@ -37,8 +58,8 @@ export async function submitContactForm(prevState: unknown, formData: FormData) 
 
     // Fetch business settings for email sender identity
     const settings = await payload.findGlobal({ slug: 'website-settings' })
-    const businessEmail = settings.email || 'info@vardhsoft.com'
-    const businessName = settings.companyName || 'VardhSoft'
+    const businessEmail = settings?.email || 'vardhsoft.connect@gmail.com'
+    const businessName = settings?.companyName || 'VardhSoft'
 
     // Handle Resend Email Dispatch
     const apiKey = process.env.RESEND_API_KEY

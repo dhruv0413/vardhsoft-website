@@ -5,7 +5,7 @@ import config from '@payload-config'
 import CareersContent from './CareersContent'
 import { getPageMetadata } from '@/lib/getPageMetadata'
 
-export const dynamic = 'force-dynamic'
+
 
 export async function generateMetadata(): Promise<Metadata> {
   return getPageMetadata('careers', {
@@ -23,15 +23,15 @@ export default async function CareersPage() {
       where: { status: { equals: 'published' } },
       limit: 100,
       sort: '-createdAt',
-    }),
+    }).catch(() => ({ docs: [] })),
     payload.findGlobal({
       slug: 'website-settings',
       depth: 1,
-    })
+    }).catch(() => null)
   ])
 
   // Format positions for the client component
-  const formattedPositions = positionsRes.docs.map((pos) => ({
+  const formattedPositions = (positionsRes?.docs || []).map((pos) => ({
     id: pos.id,
     title: pos.title,
     slug: pos.slug,
@@ -42,9 +42,9 @@ export default async function CareersPage() {
     numberOfOpenings: pos.numberOfOpenings || 1,
   }))
 
-  const coreValues = settings.coreValues || []
-  const benefits = settings.benefits || []
-  const employeeTestimonials = settings.employeeTestimonials || []
+  const coreValues = settings?.coreValues || []
+  const benefits = settings?.benefits || []
+  const employeeTestimonials = settings?.employeeTestimonials || []
 
   return (
     <CareersContent 
