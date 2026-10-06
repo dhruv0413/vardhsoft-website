@@ -9,7 +9,11 @@ export async function revalidatePathHelper(path: string, type?: 'page' | 'layout
     const { revalidatePath } = await import('next/cache')
     revalidatePath(path, type)
     console.log(`[Revalidation] Successfully revalidated: ${path} (${type || 'page'})`)
-  } catch (error) {
-    console.error(`[Revalidation] Error revalidating path ${path}:`, error)
+  } catch (error: any) {
+    // In standalone CLI scripts (like seed.ts), Next.js static store is not active — safely ignore
+    if (error?.message?.includes('static generation store missing')) {
+      return
+    }
+    console.warn(`[Revalidation] Skipped revalidating path ${path}:`, error?.message || error)
   }
 }
