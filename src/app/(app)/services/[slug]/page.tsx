@@ -262,13 +262,20 @@ export default async function ServiceDetailPage({
 }) {
   const { slug } = await params
 
-  const payload = await getPayload({ config })
-  const { docs: services } = await payload.find({
-    collection: 'services',
-    where: { slug: { equals: slug } },
-    depth: 2,
-  })
-  const dbService = services[0]
+  let dbService: any = null
+
+  try {
+    const payload = await getPayload({ config })
+    const { docs: services } = await payload.find({
+      collection: 'services',
+      where: { slug: { equals: slug } },
+      depth: 2,
+    })
+    dbService = services[0]
+  } catch (err) {
+    console.error('Failed to load service detail from Payload:', err)
+  }
+
   if (!dbService) {
     notFound()
   }

@@ -242,23 +242,29 @@ const getThemeConfig = (color: string) => {
 }
 
 export default async function ServicesPage() {
-  const payload = await getPayload({ config })
-  const servicesRes = await payload.find({
-    collection: 'services',
-    limit: 100,
-    sort: 'title',
-  })
+  let list: any[] = []
 
-  const list = servicesRes.docs.map((doc) => {
-    const theme = getThemeConfig(doc.themeColor || 'teal')
-    return {
-      slug: doc.slug,
-      title: doc.title,
-      icon: doc.icon || 'Code',
-      shortDescription: doc.shortDescription || '',
-      theme,
-    }
-  })
+  try {
+    const payload = await getPayload({ config })
+    const servicesRes = await payload.find({
+      collection: 'services',
+      limit: 100,
+      sort: 'title',
+    })
+
+    list = servicesRes.docs.map((doc) => {
+      const theme = getThemeConfig(doc.themeColor || 'teal')
+      return {
+        slug: doc.slug,
+        title: doc.title,
+        icon: doc.icon || 'Code',
+        shortDescription: doc.shortDescription || '',
+        theme,
+      }
+    })
+  } catch (err) {
+    console.error('Failed to load services from Payload:', err)
+  }
 
   const pageData = mainServicesPageData
 

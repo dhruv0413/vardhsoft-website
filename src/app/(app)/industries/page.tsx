@@ -61,17 +61,26 @@ const TRUST_TAGS: Record<string, string> = {
 }
 
 export default async function IndustriesHubPage() {
-  const payload = await getPayload({ config })
-  const [settings, industriesRes] = await Promise.all([
-    payload.findGlobal({
-      slug: 'website-settings',
-    }).catch(() => null),
-    payload.find({
-      collection: 'industries',
-      limit: 100,
-      sort: 'title',
-    }).catch(() => ({ docs: [] }))
-  ])
+  let settings: any = null
+  let industriesRes: any = { docs: [] }
+
+  try {
+    const payload = await getPayload({ config })
+    const results = await Promise.all([
+      payload.findGlobal({
+        slug: 'website-settings',
+      }).catch(() => null),
+      payload.find({
+        collection: 'industries',
+        limit: 100,
+        sort: 'title',
+      }).catch(() => ({ docs: [] }))
+    ])
+    settings = results[0]
+    industriesRes = results[1]
+  } catch (err) {
+    console.error('Failed to load industries from Payload:', err)
+  }
 
   // Normalize settings or fallback to static defaults
   const indHeroEyebrow = settings?.indHeroEyebrow || 'Industries We Serve'
@@ -181,7 +190,7 @@ export default async function IndustriesHubPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {industriesList.map((industry, index) => {
+            {industriesList.map((industry: any, index: number) => {
               const IconComp = ICON_MAP[industry.icon] || Cpu
               
               return (
@@ -238,7 +247,7 @@ export default async function IndustriesHubPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {indApproachItems.map((item, i) => (
+            {indApproachItems.map((item: any, i: number) => (
               <div key={i} className="p-8 rounded-2xl border border-white/5 bg-slate-900/20 hover:border-teal-500/20 transition-all duration-300 flex flex-col justify-between">
                 <div>
                   <h3 className="text-lg font-bold text-teal-300 mb-3">{item.title}</h3>
@@ -259,7 +268,7 @@ export default async function IndustriesHubPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {indWhyItMattersItems.map((item, i) => (
+            {indWhyItMattersItems.map((item: any, i: number) => (
               <div key={i} className="p-8 rounded-2xl border border-white/5 bg-slate-900/10 hover:border-indigo-500/20 transition-all duration-300">
                 <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
                 <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">{item.description}</p>
@@ -278,7 +287,7 @@ export default async function IndustriesHubPage() {
           </div>
 
           <div className="relative border-l border-white/10 max-w-3xl mx-auto pl-8 space-y-12">
-            {indProcessSteps.map((step, i) => (
+            {indProcessSteps.map((step: any, i: number) => (
               <div key={i} className="relative">
                 {/* Timeline dot */}
                 <div className="absolute -left-[41px] top-1.5 w-6 h-6 rounded-full bg-slate-950 border-2 border-teal-500/50 flex items-center justify-center text-[10px] font-bold text-teal-400 shadow-[0_0_10px_rgba(20,184,166,0.3)]">

@@ -16,13 +16,20 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function CaseStudiesPage() {
-  const payload = await getPayload({ config })
-  const { docs: caseStudies } = await payload.find({
-    collection: 'case-studies',
-    depth: 1,
-    limit: 100,
-    sort: '-createdAt',
-  })
+  let caseStudies: any[] = []
+
+  try {
+    const payload = await getPayload({ config })
+    const res = await payload.find({
+      collection: 'case-studies',
+      depth: 1,
+      limit: 100,
+      sort: '-createdAt',
+    })
+    caseStudies = res?.docs || []
+  } catch (err) {
+    console.error('Failed to load case-studies from Payload:', err)
+  }
 
   return (
     <div className="relative overflow-hidden bg-slate-950 text-slate-100 min-h-screen py-24">

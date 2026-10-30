@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import HoverTilt from '@/components/animations/HoverTilt'
 
 interface Position {
-  id: number
+  id: string | number
   title: string
   slug: string
   department: string

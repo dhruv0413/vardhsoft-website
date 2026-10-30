@@ -18,53 +18,34 @@ export const metadata = {
 }
 
 export default async function SitemapPage() {
-  const payload = await getPayload({ config })
-  
-  // Fetch dynamic services
-  const { docs: services } = await payload.find({
-    collection: 'services',
-    sort: 'title',
-    limit: 100,
-    depth: 1,
-  })
+  let services: any[] = []
+  let subServices: any[] = []
+  let projects: any[] = []
+  let caseStudies: any[] = []
+  let jobs: any[] = []
+  let industries: any[] = []
 
-  // Fetch sub-services grouped by parent
-  const { docs: subServices } = await payload.find({
-    collection: 'sub-services',
-    sort: 'title',
-    limit: 200,
-    depth: 1,
-  })
+  try {
+    const payload = await getPayload({ config })
+    
+    const [servicesRes, subServicesRes, projectsRes, caseStudiesRes, jobsRes, industriesRes] = await Promise.all([
+      payload.find({ collection: 'services', sort: 'title', limit: 100, depth: 1 }).catch(() => ({ docs: [] })),
+      payload.find({ collection: 'sub-services', sort: 'title', limit: 200, depth: 1 }).catch(() => ({ docs: [] })),
+      payload.find({ collection: 'projects', sort: '-createdAt', limit: 100, depth: 1 }).catch(() => ({ docs: [] })),
+      payload.find({ collection: 'case-studies', sort: '-createdAt', limit: 100, depth: 1 }).catch(() => ({ docs: [] })),
+      payload.find({ collection: 'careers', where: { status: { equals: 'published' } }, limit: 100 }).catch(() => ({ docs: [] })),
+      payload.find({ collection: 'industries', sort: 'name', limit: 100 }).catch(() => ({ docs: [] })),
+    ])
 
-  // Fetch dynamic projects
-  const { docs: projects } = await payload.find({
-    collection: 'projects',
-    sort: '-createdAt',
-    limit: 100,
-    depth: 1,
-  })
-
-  // Fetch dynamic case studies
-  const { docs: caseStudies } = await payload.find({
-    collection: 'case-studies',
-    sort: '-createdAt',
-    limit: 100,
-    depth: 1,
-  })
-
-  // Fetch dynamic career openings
-  const { docs: jobs } = await payload.find({
-    collection: 'careers',
-    where: { status: { equals: 'published' } },
-    limit: 100,
-  })
-
-  // Fetch industries
-  const { docs: industries } = await payload.find({
-    collection: 'industries',
-    sort: 'name',
-    limit: 100,
-  })
+    services = servicesRes.docs || []
+    subServices = subServicesRes.docs || []
+    projects = projectsRes.docs || []
+    caseStudies = caseStudiesRes.docs || []
+    jobs = jobsRes.docs || []
+    industries = industriesRes.docs || []
+  } catch (err) {
+    console.error('Failed to load sitemap data from Payload:', err)
+  }
 
   return (
     <div className="relative overflow-hidden bg-slate-950 text-slate-100 min-h-screen py-24">

@@ -44,7 +44,7 @@ const ICON_MAP: Record<string, React.ComponentType<any>> = {
 }
 
 interface Position {
-  id: number
+  id: string | number
   title: string
   slug: string
   department: string

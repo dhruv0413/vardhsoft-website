@@ -30,16 +30,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function CaseStudyPage({ params }: Props) {
   const { slug } = await params
-  const payload = await getPayload({ config })
+  let study: any = null
 
-  const { docs } = await payload.find({
-    collection: 'case-studies',
-    where: { slug: { equals: slug } },
-    depth: 2,
-    limit: 1,
-  })
+  try {
+    const payload = await getPayload({ config })
 
-  const study = docs[0]
+    const { docs } = await payload.find({
+      collection: 'case-studies',
+      where: { slug: { equals: slug } },
+      depth: 2,
+      limit: 1,
+    })
+
+    study = docs[0]
+  } catch (err) {
+    console.error('Failed to load case study from Payload:', err)
+  }
+
   if (!study) notFound()
 
   return <CaseStudyDetail study={study as any} />

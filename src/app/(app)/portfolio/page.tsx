@@ -20,13 +20,20 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function PortfolioPage() {
-  const payload = await getPayload({ config })
-  const { docs: projects } = await payload.find({
-    collection: 'projects',
-    depth: 1,
-    limit: 100,
-    sort: '-createdAt',
-  })
+  let projects: any[] = []
+
+  try {
+    const payload = await getPayload({ config })
+    const res = await payload.find({
+      collection: 'projects',
+      depth: 1,
+      limit: 100,
+      sort: '-createdAt',
+    })
+    projects = res?.docs || []
+  } catch (err) {
+    console.error('Failed to load portfolio projects from Payload:', err)
+  }
 
   if (projects.length === 0) {
     redirect('/case-studies')

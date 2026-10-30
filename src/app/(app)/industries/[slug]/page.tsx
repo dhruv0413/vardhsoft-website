@@ -86,20 +86,25 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function IndustryDetailPage({ params }: PageProps) {
   const { slug } = await params
   
-  const payload = await getPayload({ config })
-  const res = await payload.find({
-    collection: 'industries',
-    where: {
-      slug: { equals: slug },
-    },
-    limit: 1,
-  })
+  let doc: Industry | null = null
 
-  if (res.docs.length === 0) {
-    notFound()
+  try {
+    const payload = await getPayload({ config })
+    const res = await payload.find({
+      collection: 'industries',
+      where: {
+        slug: { equals: slug },
+      },
+      limit: 1,
+    })
+    doc = (res.docs[0] as Industry) || null
+  } catch (err) {
+    console.error('Failed to load industry detail from Payload:', err)
   }
 
-  const doc = res.docs[0] as Industry
+  if (!doc) {
+    notFound()
+  }
   
   const IconComp = ICON_MAP[doc.icon] || Cpu
   const glowColor = GLOW_COLORS[doc.slug] || 'rgba(20, 184, 166, 0.15)'

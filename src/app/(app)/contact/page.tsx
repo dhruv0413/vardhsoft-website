@@ -14,8 +14,14 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function ContactPage() {
-  const payload = await getPayload({ config })
-  const settings = await payload.findGlobal({ slug: 'website-settings' })
+  let settings: any = null
+
+  try {
+    const payload = await getPayload({ config })
+    settings = await payload.findGlobal({ slug: 'website-settings' })
+  } catch (err) {
+    console.error('Failed to load website-settings in ContactPage:', err)
+  }
 
   const contactInfo = {
     email: settings?.email || 'vardhsoft.connect@gmail.com',

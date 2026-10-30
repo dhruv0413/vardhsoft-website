@@ -288,13 +288,20 @@ export async function generateMetadata({ params }: PageProps) {
 export default async function SubServiceDetailPage({ params }: PageProps) {
   const { slug, subSlug } = await params
 
-  const payload = await getPayload({ config })
-  const { docs: subServices } = await payload.find({
-    collection: 'sub-services',
-    where: { slug: { equals: subSlug } },
-    depth: 2,
-  })
-  const dbSubService = subServices[0]
+  let dbSubService: any = null
+
+  try {
+    const payload = await getPayload({ config })
+    const { docs: subServices } = await payload.find({
+      collection: 'sub-services',
+      where: { slug: { equals: subSlug } },
+      depth: 2,
+    })
+    dbSubService = subServices[0]
+  } catch (err) {
+    console.error('Failed to load sub-service detail from Payload:', err)
+  }
+
   if (!dbSubService) {
     notFound()
   }

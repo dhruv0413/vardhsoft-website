@@ -15,37 +15,52 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function TechnologiesPage() {
-  const payload = await getPayload({ config })
-  
-  const [techRes, settings, projectsRes] = await Promise.all([
-    payload.find({
-      collection: 'technologies',
-      limit: 100,
-      sort: 'name',
-    }).catch(() => ({ docs: [] })),
-    payload.findGlobal({
-      slug: 'website-settings',
-      depth: 1,
-    }).catch(() => null),
-    payload.find({
-      collection: 'projects',
-      limit: 1,
-      depth: 0,
-    }).catch(() => ({ docs: [], totalDocs: 0 }))
-  ])
+  let formattedTech: { id: string | number; name: string; category: string; description: string }[] = []
+  let whyTechPillars: any[] = []
+  let techStats: any = null
+  let detailedWorkflow: any[] = []
+  let faqs: any[] = []
+  let hasProjects = false
 
-  // Format technologies for the client component
-  const formattedTech = (techRes?.docs || []).map((tech) => ({
-    id: tech.id,
-    name: tech.name,
-    category: tech.category,
-    description: tech.description || '',
-  }))
+  try {
+    const payload = await getPayload({ config })
+    
+    const [techRes, settings, projectsRes] = await Promise.all([
+      payload.find({
+        collection: 'technologies',
+        limit: 100,
+        sort: 'name',
+      }).catch(() => ({ docs: [] })),
+      payload.findGlobal({
+        slug: 'website-settings',
+        depth: 1,
+      }).catch(() => null),
+      payload.find({
+        collection: 'projects',
+        limit: 1,
+        depth: 0,
+      }).catch(() => ({ docs: [], totalDocs: 0 }))
+    ])
 
-  const whyTechPillars = settings?.whyTechPillars || []
-  const detailedWorkflow = settings?.detailedWorkflow || []
-  const faqs = settings?.faqs || []
-  const hasProjects = (projectsRes?.totalDocs ?? 0) > 0
+    formattedTech = (techRes?.docs || []).map((tech) => ({
+      id: tech.id,
+      name: tech.name,
+      category: tech.category,
+      description: tech.description || '',
+    }))
+
+    whyTechPillars = settings?.whyTechPillars || []
+    techStats = {
+      productionDeployments: (settings as any)?.stats?.projectsCompleted ? `${(settings as any).stats.projectsCompleted}+` : '50+',
+      uptimeSla: '99.9%',
+      avgLatency: '<100ms',
+    }
+    detailedWorkflow = settings?.detailedWorkflow || []
+    faqs = settings?.faqs || []
+    hasProjects = (projectsRes?.totalDocs ?? 0) > 0
+  } catch (err) {
+    console.error('Failed to load technologies from Payload:', err)
+  }
 
   return (
     <TechnologiesClientPage 

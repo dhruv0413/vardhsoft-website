@@ -16,12 +16,18 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function BookPage() {
-  const payload = await getPayload({ config })
-  const settings = await payload.findGlobal({
-    slug: 'website-settings',
-  }) as WebsiteSetting
+  let timeSlots: string[] = []
 
-  const timeSlots = (settings?.bookingTimeSlots ?? []).map((t) => t.slot as string)
+  try {
+    const payload = await getPayload({ config })
+    const settings = await payload.findGlobal({
+      slug: 'website-settings',
+    }) as WebsiteSetting
+
+    timeSlots = (settings?.bookingTimeSlots ?? []).map((t) => t.slot as string)
+  } catch (err) {
+    console.error('Failed to load website settings for book page:', err)
+  }
 
   return <BookingClient timeSlots={timeSlots} />
 }

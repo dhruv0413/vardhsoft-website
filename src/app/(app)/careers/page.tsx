@@ -15,36 +15,54 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function CareersPage() {
-  const payload = await getPayload({ config })
-  
-  const [positionsRes, settings] = await Promise.all([
-    payload.find({
-      collection: 'careers',
-      where: { status: { equals: 'published' } },
-      limit: 100,
-      sort: '-createdAt',
-    }).catch(() => ({ docs: [] })),
-    payload.findGlobal({
-      slug: 'website-settings',
-      depth: 1,
-    }).catch(() => null)
-  ])
+  let formattedPositions: {
+    id: string | number
+    title: string
+    slug: string
+    department: string
+    location: string
+    employmentType: string
+    experience: string
+    numberOfOpenings: number
+  }[] = []
+  let coreValues: any[] = []
+  let benefits: any[] = []
+  let employeeTestimonials: any[] = []
 
-  // Format positions for the client component
-  const formattedPositions = (positionsRes?.docs || []).map((pos) => ({
-    id: pos.id,
-    title: pos.title,
-    slug: pos.slug,
-    department: pos.department,
-    location: pos.location,
-    employmentType: pos.employmentType,
-    experience: pos.experience || '2+ years',
-    numberOfOpenings: pos.numberOfOpenings || 1,
-  }))
+  try {
+    const payload = await getPayload({ config })
+    
+    const [positionsRes, settings] = await Promise.all([
+      payload.find({
+        collection: 'careers',
+        where: { status: { equals: 'published' } },
+        limit: 100,
+        sort: '-createdAt',
+      }).catch(() => ({ docs: [] })),
+      payload.findGlobal({
+        slug: 'website-settings',
+        depth: 1,
+      }).catch(() => null)
+    ])
 
-  const coreValues = settings?.coreValues || []
-  const benefits = settings?.benefits || []
-  const employeeTestimonials = settings?.employeeTestimonials || []
+    // Format positions for the client component
+    formattedPositions = (positionsRes?.docs || []).map((pos) => ({
+      id: pos.id,
+      title: pos.title,
+      slug: pos.slug,
+      department: pos.department,
+      location: pos.location,
+      employmentType: pos.employmentType,
+      experience: pos.experience || '2+ years',
+      numberOfOpenings: pos.numberOfOpenings || 1,
+    }))
+
+    coreValues = settings?.coreValues || []
+    benefits = settings?.benefits || []
+    employeeTestimonials = settings?.employeeTestimonials || []
+  } catch (err) {
+    console.error('Failed to load careers data from Payload:', err)
+  }
 
   return (
     <CareersContent 
